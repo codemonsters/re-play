@@ -8,6 +8,7 @@ Ideas:
   * Shooter 2D
   * Estrategia por Turnos
   * Minigolf
+  * Among us
   * ~~Coronavirus~~
   * ~~Calculadora~~
   * ~~Futbolin 2P/6P~~
