@@ -1,1 +1,13 @@
-# calculadora
+# Laboratorio 2020 y 2021 (y 2022?)
+
+Ideas:
+  * Art of Rally
+  * Sensible Soccer
+  * Tower Defense
+  * Plataformas 2D/3D
+  * Shooter 2D
+  * Estrategia por Turnos
+  * Minigolf
+  * ~~Coronavirus~~
+  * ~~Calculadora~~
+  * ~~Futbolin 2P/6P~~
