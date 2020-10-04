@@ -12,3 +12,7 @@ Ideas:
   * ~~Coronavirus~~
   * ~~Calculadora~~
   * ~~Futbolin 2P/6P~~
+
+## Enlaces
+
+* Awesome Godot (lista con recursos para Godot como documentación, plugins, herramientas, etc): [https://github.com/godotengine/awesome-godot](https://github.com/godotengine/awesome-godot)
