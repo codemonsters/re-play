@@ -12,6 +12,18 @@ Ideas:
   * ~~Coronavirus~~
   * ~~Calculadora~~
   * ~~Futbolin 2P/6P~~
+  
+## Chuleta configuración VS Code y Godot
+  Para abrir los scripts con VS Code, y no con godot, hay que hacer esto:
+* En Godot ir a ```Editor>Configuración del editor```
+* Ir a ```Text Editor > External```
+* Activar ```Editor externo```
+* En exec path poner la ruta al archivo ```code.cmd```
+* A continuación, poner  ```{project} --goto {file}:{line}:{col}```.
+
+Finalmente, instalar el plugin godot tools en VS Code.
+
+¡Y ya está! ¡Puedes considerarte un genio!
 
 ## Enlaces
 
