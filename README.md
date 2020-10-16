@@ -29,5 +29,5 @@ Finalmente, instalar el plugin godot tools en VS Code.
 
 * Awesome Godot (lista con recursos para Godot como documentación, plugins, herramientas, etc): [https://github.com/godotengine/awesome-godot](https://github.com/godotengine/awesome-godot)
 
-### Discord: Trabajo a distancia
+## Discord: Trabajo a distancia
 Invitación al servidor de Discord para la actividad de Laboratorio: https://discord.gg/ZQaNtRF
