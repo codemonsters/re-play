@@ -9,6 +9,9 @@ Ideas:
   * Estrategia por Turnos
   * Minigolf
   * Among us
+  * Lunar Lander
+  * Space Frontier
+  * Simulador de vuelo 2D
   * ~~Coronavirus~~
   * ~~Calculadora~~
   * ~~Futbolin 2P/6P~~
