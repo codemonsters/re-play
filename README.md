@@ -11,7 +11,7 @@ Tareas pendientes antes de empezar a programar:
 * Pruebas de animación esqueletal de un modelo 3D 
 * ¿Cómo mostrar un juego 2D dentro de un espacio 3D?
 
-Ideas:
+## Ideas:
 
 **Véase: [Issue #2](https://github.com/codemonsters/re-play/issues/2)**
 
