@@ -1,4 +1,5 @@
-# Laboratorio 2020 y 2021 (y 2022?)
+# Re:Play
+### Laboratorio 2020 y 2021 (y 2022?)
 
 La idea que se está imponiendo es un juego similar a fall guys (carrera 3D) pero que durante la fase sea necesario ganar a varios microjuegos muy cortos (¿10 segundos de juego cada uno?) disponibles en máquinas recreativas a lo largo del escenario antes de llegar a la meta. Se podría jugar offline u online, pudiendo en este último caso molestar unos jugadores a otros durante la partida.
 
@@ -11,20 +12,9 @@ Tareas pendientes antes de empezar a programar:
 * ¿Cómo mostrar un juego 2D dentro de un espacio 3D?
 
 Ideas:
-  * Art of Rally
-  * Sensible Soccer
-  * Tower Defense
-  * Plataformas 2D/3D
-  * Shooter 2D
-  * Estrategia por Turnos
-  * Minigolf
-  * Among us
-  * Lunar Lander
-  * Space Frontier
-  * Simulador de vuelo 2D
-  * ~~Coronavirus~~
-  * ~~Calculadora~~
-  * ~~Futbolin 2P/6P~~
+
+**Véase: [Issue #2](https://github.com/codemonsters/re-play/issues/2)**
+
   
 ## Chuleta configuración VS Code y Godot
   Para abrir los scripts con VS Code, y no con godot, hay que hacer esto:
@@ -43,4 +33,4 @@ Finalmente, instalar el plugin godot tools en VS Code.
 * Awesome Godot (lista con recursos para Godot como documentación, plugins, herramientas, etc): [https://github.com/godotengine/awesome-godot](https://github.com/godotengine/awesome-godot)
 
 ## Discord: Trabajo a distancia
-Invitación al servidor de Discord para la actividad de Laboratorio: https://discord.gg/ZQaNtRF
+Invitación al servidor de Discord para la actividad de Laboratorio: [LINK](https://discord.gg/ZQaNtRF)
