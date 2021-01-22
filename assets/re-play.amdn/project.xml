@@ -1,0 +1,534 @@
+<?xml version="1.0" ?>
+<Document serializeVersion="13">
+    <InterfaceSettings canvasscale="0.5" canvasrect="-1496.55,-676.549,4538,2688" canvasCenter="772.451,667.451" />
+    <Drawing snapgrid="0" gridback="1" sheetmovecontent="1" measurementunits="5" guidesvisible="1" guideslocked="0" scalestrokeandeffects="0" issheetdependentrulers="1" marginsenabled="0" margins="0,0,0,0" bleedsenabled="0" bleeds="0,0,0,0" colorformat="0" effectsPpi="150">
+        <Sheets count="1" activesheet="0">
+            <_0 name="Sheet 2" bound="0,1.19209e-07,1300,1300" enabled="1" />
+        </Sheets>
+        <swatches>
+            <colorpalette count="22">
+                <_0 color="1,0.113725,0.145098,1" />
+                <_1 color="1,0.576471,0.117647,1" />
+                <_2 color="0.992157,0.752941,0.321569,1" />
+                <_3 color="0.988235,0.933333,0.133333,1" />
+                <_4 color="0.54902,0.776471,0.247059,1" />
+                <_5 color="0,0.407843,0.215686,1" />
+                <_6 color="0.133333,0.709804,0.45098,1" />
+                <_7 color="0,0.654902,0.619608,1" />
+                <_8 color="0.243137,0.662745,0.960784,1" />
+                <_9 color="0,0.443137,0.733333,1" />
+                <_10 color="0.219608,0.184314,0.576471,1" />
+                <_11 color="0.4,0.176471,0.568627,1" />
+                <_12 color="0.933333,0.145098,0.482353,1" />
+                <_13 color="1,0.482353,0.67451,1" />
+                <_14 color="0.780392,0.698039,0.6,1" />
+                <_15 color="0.776471,0.615686,0.427451,1" />
+                <_16 color="0.54902,0.384314,0.223529,1" />
+                <_17 color="0.376471,0.219608,0.0745098,1" />
+                <_18 color="0,0,0,1" />
+                <_19 color="0.313726,0.313726,0.313726,1" />
+                <_20 color="0.623529,0.623529,0.623529,1" />
+                <_21 color="1,1,1,1" />
+            </colorpalette>
+            <gradientswatches count="23">
+                <_0>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.87451,0.25098,1" colorlocation="0" />
+                            <_1 color="1,0.431373,0.294118,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_0>
+                <_1>
+                    <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.329412,0.819608,0.411765,1" colorlocation="0" />
+                            <_1 color="0.686275,0.960784,0.478431,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_1>
+                <_2>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.27451,0.933333,0.666667,1" colorlocation="0" />
+                            <_1 color="0.172549,0.74902,0.780392,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_2>
+                <_3>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.0823529,0.929412,0.929412,1" colorlocation="0" />
+                            <_1 color="0.00784314,0.611765,0.960784,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_3>
+                <_4>
+                    <gradientfiller startpoint="1,0.5" endpoint="0,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.34902,0.760784,1,1" colorlocation="0" />
+                            <_1 color="0.0705882,0.439216,0.890196,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_4>
+                <_5>
+                    <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.329412,0.588235,1,1" colorlocation="0" />
+                            <_1 color="0.529412,0.223529,0.898039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_5>
+                <_6>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.729412,0.32549,0.439216,1" colorlocation="0" />
+                            <_1 color="0.952941,0.882353,0.843137,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_6>
+                <_7>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.686275,0.741176,1" colorlocation="0" />
+                            <_1 color="1,0.764706,0.627451,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_7>
+                <_8>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.964706,0.792157,0.92549,1" colorlocation="0" />
+                            <_1 color="0.85098,0.227451,0.803922,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_8>
+                <_9>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.388235,0.870588,1" colorlocation="0" />
+                            <_1 color="0.694118,0.133333,0.898039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_9>
+                <_10>
+                    <gradientfiller startpoint="0.5,1" endpoint="0.5,0" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,0.486275,0.431373,1" colorlocation="0" />
+                            <_1 color="0.960784,0.192157,0.498039,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_10>
+                <_11>
+                    <gradientfiller startpoint="1,0" endpoint="0,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.941176,0.372549,0.396078,1" colorlocation="0" />
+                            <_1 color="0.603922,0.0823529,0.462745,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_11>
+                <_12>
+                    <gradientfiller startpoint="0.5,1" endpoint="0.5,0" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.94902,0.305882,0.364706,1" colorlocation="0" />
+                            <_1 color="0.647059,0.0352941,0.121569,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_12>
+                <_13>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.890196,0.792157,0.490196,1" colorlocation="0" />
+                            <_1 color="0.329412,0.0745098,0.839216,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_13>
+                <_14>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,1,1,1" colorlocation="0" />
+                            <_1 color="0.764706,0.764706,0.764706,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_14>
+                <_15>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.74902,0.74902,0.74902,1" colorlocation="0" />
+                            <_1 color="0.454902,0.454902,0.454902,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_15>
+                <_16>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0.290196,0.290196,0.290196,1" colorlocation="0" />
+                            <_1 color="0,0,0,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_16>
+                <_17>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="1.2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.992157,0.823529,0.0980392,1" colorlocation="0" />
+                            <_1 color="0.94902,0.427451,0.0588235,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_17>
+                <_18>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="1.2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.313726,0.87451,0.901961,1" colorlocation="0" />
+                            <_1 color="0.152941,0.309804,0.776471,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_18>
+                <_19>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0.462745,0.929412,0.643137,1" colorlocation="0" />
+                            <_1 color="0.227451,0.6,0.666667,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_19>
+                <_20>
+                    <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="1,1,1,1" colorlocation="0" />
+                            <_1 color="1,1,1,0" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_20>
+                <_21>
+                    <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1.5" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                        <gradient count="2">
+                            <_0 color="0,0,0,0" colorlocation="0" />
+                            <_1 color="0,0,0,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_21>
+                <_22>
+                    <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                        <gradient count="2">
+                            <_0 color="0,0,0,1" colorlocation="0" />
+                            <_1 color="1,0,0,1" colorlocation="1" />
+                        </gradient>
+                    </gradientfiller>
+                </_22>
+            </gradientswatches>
+            <ellipticbrushwatches count="6">
+                <_0 brush="3.14159,0.2" />
+                <_1 brush="1.5708,0.3" />
+                <_2 brush="1.0472,0.4" />
+                <_3 brush="0.785398,0.8" />
+                <_4 brush="1.5708,0.6" />
+                <_5 brush="0.523599,0.2" />
+            </ellipticbrushwatches>
+            <strokeprofiles count="5">
+                <_0 />
+                <_1>
+                    <strokeprofile spplaces="0,1" sprightradius="1,0" spleftradius="1,0" />
+                </_1>
+                <_2>
+                    <strokeprofile spplaces="0,0.5,1" sprightradius="1,0,1" spleftradius="1,0,1" />
+                </_2>
+                <_3>
+                    <strokeprofile spplaces="0,0.5,1" sprightradius="0,1,0" spleftradius="0,1,0" />
+                </_3>
+                <_4>
+                    <strokeprofile spplaces="0,0.2,0.8,1" sprightradius="0,1,1,0" spleftradius="0,1,1,0" />
+                </_4>
+            </strokeprofiles>
+        </swatches>
+        <Grid size="100,100" subdivisionx="2" subdivisiony="2" color="0.5,0.5,0.5,0.5" visible="1" />
+        <Objects count="1" activelayer="0">
+            <_0 class="Layer" name="Layer 1" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="0.19,0.55,1,1">
+                <Objects count="4">
+                    <_0 class="Layer" name="Layer 2" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" selectioncolor="1,0.5,0,1">
+                        <Objects count="1">
+                            <_0 class="PathShape" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(1300.000027020956,0, 0,1299.999959774092, 0,1.192092895507812e-07)" pivotPoint="0.5,0.5" d="M 0 0 C 0 0 1 0 1 0 C 1 0 1 1 1 1 C 1 1 0 1 0 1 C 0 1 0 0 0 0 Z " autoclosed="0" handlesArray="F1 M 0 0.0446518101 L 0 0.0446518101 ">
+                                <drawers count="2">
+                                    <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="1" stroke="1" salign="0" smode="0">
+                                        <solidfiller fill="1,0.867488,0.63057,1" />
+                                        <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                                            <gradient count="2">
+                                                <_0 color="0.462745,0.929412,0.643137,1" colorlocation="0" />
+                                                <_1 color="0.227451,0.6,0.666667,1" colorlocation="1" />
+                                            </gradient>
+                                        </gradientfiller>
+                                        <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                        <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                        <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                        <brush angle="0.785398" roundness="0.333333" />
+                                    </_0>
+                                    <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                        <solidfiller fill="1,0.870588,0.631373,1" />
+                                        <gradientfiller startpoint="0.5,0.5" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="1">
+                                            <gradient count="2">
+                                                <_0 color="0.462745,0.929412,0.643137,1" colorlocation="0" />
+                                                <_1 color="0.227451,0.6,0.666667,1" colorlocation="1" />
+                                            </gradient>
+                                        </gradientfiller>
+                                        <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                    </_1>
+                                </drawers>
+                            </_0>
+                        </Objects>
+                    </_0>
+                    <_1 class="PathShape" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(173.86328125,0, 0,754.26171875, 216.8822631835938,429.2475891113281)" pivotPoint="0.5,0.5" d="F1 M 0.132130578 1.11022302e-16 C 0.132130578 1.11022302e-16 0.466444999 0.0674397051 0.466444999 0.0674397051 C 0.466444999 0.0674397051 0.959940672 0.201262623 0.959940672 0.201262623 C 0.959940672 0.201262623 1 0.273026705 1 0.273026705 C 1 0.273026705 1 0.551874518 1 0.551874518 C 1 0.551874518 1 0.767177105 1 0.767177105 C 1 0.767177105 0.903570056 0.985426545 0.903570056 0.985426545 C 0.903570056 0.985426545 -2.22044605e-16 1 -2.22044605e-16 1 C -2.22044605e-16 1 0.065267697 0.654183805 0.065267697 0.654183805 C 0.065267697 0.654183805 0.170841858 0.492689967 0.170841858 0.492689967 C 0.170841858 0.492689967 0.127457365 0.257256955 0.127457365 0.257256955 C 0.127457365 0.257256955 0.132130578 1.11022302e-16 0.132130578 1.11022302e-16 Z " autoclosed="1" handlesArray="F1 M 0.132130578 1.11022302e-16 L 0.132130578 1.11022302e-16 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="1" stroke="1" salign="0" smode="0">
+                                <solidfiller fill="1,0.867488,0.63057,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0.329412,0.819608,0.411765,1" colorlocation="0" />
+                                        <_1 color="0.686275,0.960784,0.478431,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="0.5" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0.290196,0.290196,0.290196,1" colorlocation="0" />
+                                        <_1 color="0,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_1>
+                    <_2 class="PathShape" name="Path" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(803.40625,0, 0,639.7031250000002, 303.8874816894531,172.8335266113281)" pivotPoint="0.5,0.5" d="F1 M 0.0178277269 0.204131171 C 0.0178277269 0.204131171 0.0697615594 0.141838253 0.0697615594 0.141838253 C 0.0697615594 0.141838253 0.141545758 0.0434283465 0.141545758 0.0434283465 C 0.141545758 0.0434283465 0.250839502 0 0.250839502 0 C 0.250839502 0 0.38924107 0 0.38924107 0 C 0.38924107 0 0.537678123 0 0.537678123 0 C 0.537678123 0 0.710574806 0.0458220355 0.710574806 0.0458220355 C 0.710574806 0.0458220355 0.775441766 0.0818820745 0.775441766 0.0818820745 C 0.775441766 0.0818820745 0.835012376 0.13814187 0.835012376 0.13814187 C 0.835012376 0.13814187 0.96516788 0.310292035 0.96516788 0.310292035 C 0.96516788 0.310292035 1 0.405599922 1 0.405599922 C 1 0.405599922 1 0.555921912 1 0.555921912 C 1 0.555921912 0.927424848 0.672805548 0.927424848 0.672805548 C 0.927424848 0.672805548 0.81400162 0.832466245 0.81400162 0.832466245 C 0.81400162 0.832466245 0.634998143 0.961782396 0.634998143 0.961782396 C 0.634998143 0.961782396 0.468759298 1 0.468759298 1 C 0.468759298 1 0.211884275 1 0.211884275 1 C 0.211884275 1 0.220642582 0.898414791 0.220642582 0.898414791 C 0.220642582 0.898414791 0.227566227 0.826343596 0.227566227 0.826343596 C 0.227566227 0.826343596 0.217757717 0.796332955 0.217757717 0.796332955 C 0.217757717 0.796332955 0.288822323 0.775259078 0.288822323 0.775259078 C 0.288822323 0.775259078 0.444545984 0.756617248 0.444545984 0.756617248 C 0.444545984 0.756617248 0.567434251 0.730359972 0.567434251 0.730359972 C 0.567434251 0.730359972 0.667548299 0.668864965 0.667548299 0.668864965 C 0.667548299 0.668864965 0.721427023 0.590638518 0.721427023 0.590638518 C 0.721427023 0.590638518 0.740155876 0.520497024 0.740155876 0.520497024 C 0.740155876 0.520497024 0.71104157 0.44016999 0.71104157 0.44016999 C 0.71104157 0.44016999 0.649979889 0.342745274 0.649979889 0.342745274 C 0.649979889 0.342745274 0.543156028 0.275152057 0.543156028 0.275152057 C 0.543156028 0.275152057 0.413940609 0.271211416 0.413940609 0.271211416 C 0.413940609 0.271211416 0.29868269 0.299780995 0.29868269 0.299780995 C 0.29868269 0.299780995 0.185583487 0.321788281 0.185583487 0.321788281 C 0.185583487 0.321788281 0.163198337 0.346058965 0.163198337 0.346058965 C 0.163198337 0.346058965 0.152585983 0.424171358 0.152585983 0.424171358 C 0.152585983 0.424171358 0.15042071 0.536389709 0.15042071 0.536389709 C 0.15042071 0.536389709 0.100600295 0.46727404 0.100600295 0.46727404 C 0.100600295 0.46727404 0.0697615594 0.358629882 0.0697615594 0.358629882 C 0.0697615594 0.358629882 0.0178277269 0.308989376 0.0178277269 0.308989376 C 0.0178277269 0.308989376 0 0.252827227 0 0.252827227 C 0 0.252827227 0.0178277269 0.204131171 0.0178277269 0.204131171 Z " autoclosed="1" handlesArray="F1 M 0.0178277269 0.204131171 L 0.0178277269 0.204131171 ">
+                        <drawers count="2">
+                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="1" stroke="1" salign="0" smode="0">
+                                <solidfiller fill="1,0.867488,0.63057,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0.329412,0.819608,0.411765,1" colorlocation="0" />
+                                        <_1 color="0.686275,0.960784,0.478431,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_0>
+                            <_1 class="1" name="Fill" enabled="1" opacity="0.5" blendmode="0" fillmode="0" winding="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0.5,0" endpoint="0.5,1" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0.290196,0.290196,0.290196,1" colorlocation="0" />
+                                        <_1 color="0,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_1>
+                        </drawers>
+                    </_2>
+                    <_3 class="Group" name="Group" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" ctm="(949.0701293945312,0, 0,1163.2236328125, 175.4649047851562,68.38826000690462)" pivotPoint="0.5,0.5">
+                        <drawers count="2">
+                            <_0 class="1" name="Fill" enabled="1" opacity="1" blendmode="8" fillmode="1" winding="0">
+                                <solidfiller fill="0.666667,0.666667,0.666667,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                            </_0>
+                            <_1 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                <solidfiller fill="0,0,0,1" />
+                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                    <gradient count="2">
+                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                    </gradient>
+                                </gradientfiller>
+                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                <brush angle="0.785398" roundness="0.333333" />
+                            </_1>
+                        </drawers>
+                        <Objects count="1">
+                            <_0 class="Group" name="Group" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="1" ctm="(1,0, 0,1, 0,0)" pivotPoint="0.5,0.5">
+                                <drawers count="2">
+                                    <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                        <solidfiller fill="0,0,0,1" />
+                                        <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                            <gradient count="2">
+                                                <_0 color="0,0,0,1" colorlocation="0" />
+                                                <_1 color="1,0,0,1" colorlocation="1" />
+                                            </gradient>
+                                        </gradientfiller>
+                                        <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                        <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                        <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                        <brush angle="0.785398" roundness="0.333333" />
+                                    </_0>
+                                    <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="0" winding="0">
+                                        <solidfiller fill="0,0,0,0" />
+                                        <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                            <gradient count="2">
+                                                <_0 color="0,0,0,1" colorlocation="0" />
+                                                <_1 color="1,0,0,1" colorlocation="1" />
+                                            </gradient>
+                                        </gradientfiller>
+                                        <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                    </_1>
+                                </drawers>
+                                <Objects count="5">
+                                    <_0 class="PathShape" name="Shape 2" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(0.6252405774695301,0, 0,0.1687464870867513, 0.2128572085457051,-1.387778780781446e-17)" pivotPoint="0.5,0.5" d="M 0.132520258 0.01477353 C 0.138367951 0.00351467705 0.145749182 -0.0049931379 0.152574271 0.00336184818 C 0.157377139 0.0105450805 0.162062019 0.0220077187 0.163595572 0.0381572917 C 0.166426718 0.0670431703 0.168297336 0.0969478935 0.168432131 0.127107352 C 0.170302689 0.188496158 0.171111599 0.250343472 0.174751669 0.31117186 C 0.175105557 0.353609115 0.178543404 0.394874543 0.180262297 0.436853319 C 0.181307122 0.454531252 0.182790115 0.47867924 0.189716354 0.482958615 C 0.20680438 0.4896833 0.223841906 0.48112458 0.240795135 0.475520581 C 0.253282517 0.476845205 0.265264452 0.464312702 0.27768445 0.463803202 C 0.286852002 0.462325841 0.295817345 0.456212461 0.304799438 0.450965106 C 0.312517762 0.449029177 0.320286542 0.44811219 0.327987969 0.444902629 C 0.339952946 0.444240332 0.351530463 0.432319194 0.363562793 0.43369475 C 0.374499798 0.429313451 0.385605395 0.431300312 0.396475017 0.425339758 C 0.40705809 0.42146787 0.417708665 0.426664293 0.428325474 0.424983114 C 0.438891768 0.422741503 0.44957608 0.427020878 0.460041165 0.420550913 C 0.470775962 0.414437503 0.481342286 0.426817119 0.492093921 0.424728364 C 0.507530451 0.422232091 0.522983909 0.424422711 0.538420379 0.422894329 C 0.553519905 0.417596072 0.568164408 0.403433353 0.58329761 0.398644507 C 0.598380268 0.396861404 0.613462925 0.398084104 0.628545523 0.398440778 C 0.640257716 0.397778451 0.651430726 0.410514712 0.663058698 0.413061976 C 0.678309858 0.416220546 0.691909552 0.439706206 0.706739366 0.448774427 C 0.716109157 0.454938829 0.724467814 0.469916672 0.733567894 0.47867924 C 0.743510723 0.488409668 0.752678275 0.504253626 0.762789547 0.512710512 C 0.773507476 0.521880627 0.782809854 0.541647255 0.793510914 0.550970197 C 0.802577376 0.558713853 0.811222494 0.570023656 0.820103645 0.579550385 C 0.82878238 0.58846575 0.834899724 0.612460911 0.84401679 0.618319571 C 0.851162076 0.624127328 0.859352171 0.620612085 0.865637958 0.634316325 C 0.871047556 0.645167649 0.876389623 0.656528354 0.882389009 0.664424837 C 0.894994438 0.680370688 0.907178521 0.700086415 0.91808176 0.725049436 C 0.922429621 0.734576225 0.928108811 0.737480044 0.931883633 0.749655902 C 0.934209287 0.756686389 0.936989903 0.762086511 0.939989507 0.766264081 C 0.947387636 0.776402056 0.953606069 0.792806387 0.96117264 0.801976442 C 0.963767946 0.819501579 0.969480753 0.829028428 0.974064589 0.841204166 C 0.978210092 0.852208316 0.982608616 0.862550199 0.98636657 0.874878943 C 0.991236866 0.891996443 0.992012024 0.915329158 0.994573593 0.935809195 C 0.995028615 0.943501949 0.998078823 0.943196118 1 0.945896208 C 0.997505844 0.951755047 0.994539797 0.956645727 0.993040085 0.965459287 C 0.991894126 0.974578321 0.992231071 0.984563649 0.992298543 0.994141221 C 0.988843918 0.998369694 0.985119522 0.999643326 0.981445789 1 C 0.980181873 0.992561936 0.97917068 0.984461665 0.977165282 0.978552043 C 0.973070264 0.970502794 0.967694402 0.976463258 0.963515103 0.969076335 C 0.960313201 0.963726997 0.957414687 0.95695138 0.95416224 0.952009678 C 0.948567271 0.943399966 0.942163527 0.941667855 0.936585486 0.933159947 C 0.932035387 0.925722003 0.929743528 0.909929037 0.925294518 0.902440071 C 0.920407355 0.897600412 0.915166378 0.894289017 0.911442041 0.882673562 C 0.903808057 0.861123741 0.893106997 0.856742382 0.883973122 0.843496799 C 0.874266267 0.82933408 0.86353147 0.822609305 0.85416168 0.806153953 C 0.846409738 0.792959213 0.837933064 0.783941984 0.829338551 0.777319074 C 0.821114719 0.772683024 0.810902297 0.778286994 0.805138946 0.75571841 C 0.800875306 0.737785697 0.793055892 0.74201417 0.786972284 0.734983802 C 0.771603167 0.715420842 0.755374551 0.70288837 0.740022302 0.683070779 C 0.731276035 0.670589268 0.721552372 0.666513622 0.712806106 0.65423584 C 0.705054164 0.643995941 0.696543872 0.640480697 0.688977301 0.628967047 C 0.67829299 0.612104297 0.666092098 0.609760821 0.654582024 0.600998282 C 0.63350004 0.592082918 0.612131536 0.589994133 0.590847313 0.592643321 C 0.574635565 0.599113345 0.558390141 0.608894765 0.543661356 0.631055832 C 0.533651233 0.646696031 0.522174954 0.648988545 0.511996269 0.662998438 C 0.504969001 0.673391163 0.496913612 0.667379677 0.489414394 0.668347657 C 0.476792186 0.669009864 0.465164274 0.649497986 0.452643156 0.649090409 C 0.443003714 0.653879225 0.433246374 0.653420687 0.423522651 0.653165996 C 0.408389479 0.656222701 0.397705197 0.615008175 0.383178681 0.609302342 C 0.374752611 0.601762414 0.366410792 0.614855349 0.358052224 0.608538151 C 0.345699579 0.602832317 0.332504332 0.616230786 0.320876449 0.599011421 C 0.315214038 0.593458414 0.309231579 0.590401709 0.304057956 0.581078768 C 0.302271634 0.583014667 0.300569564 0.585510969 0.298800111 0.587497771 C 0.297839522 0.582403302 0.296996921 0.577155948 0.295985818 0.572214305 C 0.288115919 0.574048281 0.280734688 0.562432826 0.272898406 0.564470708 C 0.269662827 0.56498009 0.266410381 0.56523484 0.263174683 0.565387666 C 0.263039947 0.567170799 0.262753397 0.570736885 0.262601793 0.572520018 C 0.260040224 0.568699121 0.257546157 0.561006367 0.254462183 0.563451827 C 0.247316897 0.568138719 0.240087375 0.573029399 0.232722998 0.570685983 C 0.232605025 0.574404955 0.232520685 0.578123927 0.232453316 0.581893861 C 0.229841247 0.57990706 0.227128088 0.57501626 0.224414811 0.578276753 C 0.218634605 0.584899604 0.213612661 0.596056581 0.208118841 0.6043607 C 0.205658451 0.609098554 0.202523977 0.612155259 0.200889319 0.619898856 C 0.199777082 0.630087852 0.199423149 0.640837252 0.199153557 0.651535749 C 0.204748422 0.652758479 0.209365934 0.66279459 0.214539498 0.668092906 C 0.221027583 0.668653309 0.227498785 0.658617139 0.233919442 0.665902257 C 0.242480338 0.674868643 0.251496196 0.6718629 0.260293037 0.668806136 C 0.260798603 0.673493087 0.261287272 0.678231001 0.261809677 0.682917953 C 0.252675861 0.676702619 0.246929333 0.703194082 0.238486394 0.706964016 C 0.22933571 0.714096308 0.219831094 0.71511519 0.210612983 0.721126735 C 0.205675319 0.723775804 0.200720787 0.730602503 0.195665151 0.726170242 C 0.192159891 0.747108698 0.18383494 0.737480044 0.177700788 0.740587711 C 0.168145612 0.744510472 0.159028664 0.754750431 0.14950718 0.759284556 C 0.136244565 0.766365886 0.12261121 0.782413542 0.109095827 0.771154761 C 0.106871329 0.791940391 0.0988665745 0.790819585 0.0929852054 0.794232845 C 0.0901708752 0.79606694 0.0873565972 0.793723345 0.0847444907 0.790717602 C 0.0830929652 0.800549984 0.0813909322 0.810433328 0.079149574 0.819195867 C 0.0790147781 0.812012613 0.0790316463 0.804829478 0.0789473578 0.797697067 C 0.0751050785 0.79581213 0.0712122396 0.795964956 0.0674205124 0.79851222 C 0.0630221367 0.778694689 0.0564160831 0.765041351 0.0509222746 0.748331368 C 0.0452599861 0.730959117 0.0367833711 0.723724902 0.0321995951 0.702990294 C 0.0253745057 0.672423303 0.0233353619 0.635335207 0.0185830519 0.601966262 C 0.0162911881 0.583727896 0.00870773476 0.580110788 0.00567437336 0.563400805 C 0.00291060098 0.548015356 -0.00169004628 0.531305432 0.00063555449 0.512812436 C 0.00304544671 0.488715351 0.00585972192 0.463242799 0.0121455807 0.44566679 C 0.0154485824 0.436496645 0.0182629097 0.425951064 0.0207907278 0.414794087 C 0.02343647 0.402771056 0.0278011635 0.395740598 0.0308851302 0.384991199 C 0.0332781039 0.37475127 0.0342050008 0.361862183 0.0370361432 0.352539241 C 0.046422787 0.329664946 0.0523041598 0.296041191 0.0561295711 0.262009829 C 0.0577305444 0.251973748 0.060814511 0.244739473 0.0621626601 0.234244794 C 0.0647578984 0.215191394 0.0660218075 0.194201991 0.0701168627 0.177237272 C 0.0753072947 0.155942276 0.0819133446 0.138213411 0.0874239728 0.117682524 C 0.0933053941 0.0946044251 0.101613477 0.0791171193 0.10830377 0.0584843978 C 0.115044624 0.0378006771 0.124549188 0.0299042184 0.132520258 0.01477353 M 0.102169573 0.386061072 C 0.0966420844 0.408120304 0.0918224007 0.432981521 0.0903899595 0.460797459 C 0.0943839028 0.465993881 0.098478958 0.463548541 0.100669764 0.451474518 C 0.102894202 0.455040663 0.10518612 0.458250225 0.107427433 0.461918265 C 0.107562274 0.456314266 0.107730806 0.450761288 0.107899286 0.445208281 C 0.11046084 0.44347617 0.113864951 0.444698811 0.115415372 0.436751395 C 0.120083392 0.416169643 0.1200497 0.390187621 0.121313609 0.366396278 C 0.114488475 0.366803855 0.106820777 0.368739784 0.102169573 0.386061072 Z " autoclosed="0" handlesArray="F1 M 0.132520258 0.01477353 L 0.132520258 0.01477353 M 0.102169573 0.386061072 L 0.102169573 0.386061072 ">
+                                        <drawers count="2">
+                                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                                <solidfiller fill="0,0,0,1" />
+                                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="2">
+                                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                                <brush angle="0.785398" roundness="0.333333" />
+                                            </_0>
+                                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                                <solidfiller fill="0.796078,0.243137,0.211765,1" />
+                                                <gradientfiller startpoint="-1,0.5" endpoint="2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="3">
+                                                        <_0 color="0.0297045,0,0,1" colorlocation="0.0297045" />
+                                                        <_1 color="0,0,0,1" colorlocation="0.0297046" />
+                                                        <_2 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                            </_1>
+                                        </drawers>
+                                    </_0>
+                                    <_1 class="PathShape" name="Shape 3" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(0.909486792717352,0, 0,0.5006019963211744, 0.09051320728264747,0.1573900964495387)" pivotPoint="0.5,0.5" d="M 0.107071079 0.00750461128 C 0.110396042 0.00255880109 0.115122803 0.000120223034 0.1197685 5.55111512e-17 C 0.121483095 5.55111512e-17 0.123846494 0.000978869153 0.123997107 0.00400132034 C 0.124541618 0.00892994087 0.124286741 0.0142191779 0.122664817 0.0186670106 C 0.120591044 0.0251068044 0.116767928 0.0304304212 0.116130717 0.0377804302 C 0.114891119 0.0509520844 0.108994201 0.0615134202 0.104394853 0.0724525601 C 0.100954071 0.0808329582 0.0959723964 0.0874445438 0.0920797661 0.0953440964 C 0.090770632 0.097490713 0.0896236673 0.100547493 0.0875499323 0.101114176 C 0.0846420228 0.103329495 0.082753621 0.107399471 0.0805755928 0.110851243 C 0.075315915 0.119987197 0.0696739033 0.129363656 0.0675190315 0.141230151 C 0.0664416105 0.148459941 0.0695232898 0.155311912 0.07292936 0.160034463 C 0.0823597312 0.17287983 0.0907474384 0.187579855 0.101359524 0.198415965 C 0.108913131 0.205903322 0.115980104 0.214695916 0.121506289 0.22544612 C 0.124842845 0.232074901 0.129314736 0.237999529 0.130565956 0.246414304 C 0.131944567 0.255275488 0.134771377 0.263415486 0.136590272 0.272070587 C 0.137551859 0.277668983 0.141467646 0.281275302 0.141537189 0.287285835 C 0.142545104 0.302552521 0.150562078 0.3139382 0.152855963 0.328569561 C 0.155659571 0.342617005 0.16129002 0.354964316 0.1643022 0.368891537 C 0.164939374 0.368548125 0.165576577 0.368238956 0.166236907 0.367964238 C 0.166932032 0.371021032 0.167638749 0.374146461 0.168947861 0.37679109 C 0.170477122 0.378972024 0.172921628 0.378439695 0.174809992 0.37766692 C 0.178250805 0.366161048 0.176906943 0.353212655 0.177578881 0.341019928 C 0.17962946 0.321803421 0.17667523 0.301934332 0.180405676 0.283026934 C 0.182722732 0.271984756 0.183301985 0.260135442 0.186904982 0.249745801 C 0.189801306 0.240644172 0.191736057 0.230924293 0.194898829 0.221977204 C 0.196787208 0.217082918 0.196231127 0.210127905 0.199764624 0.206813544 C 0.203854203 0.202365711 0.208233431 0.198467478 0.212809622 0.195221826 C 0.218046144 0.191563979 0.223966211 0.192800432 0.22956188 0.192456946 C 0.235481948 0.192371115 0.241251379 0.190190122 0.246974498 0.188129395 C 0.256011009 0.185999915 0.265256017 0.186102957 0.274211437 0.183149204 C 0.283410102 0.180332869 0.292852044 0.179611593 0.301958114 0.176056832 C 0.310519546 0.172622249 0.319532901 0.172416136 0.327990115 0.168311834 C 0.332299858 0.16628544 0.336771756 0.165083304 0.341289967 0.165066123 C 0.347557634 0.165203527 0.353222817 0.160223395 0.359455705 0.159965768 C 0.368144631 0.159673855 0.376485944 0.15551798 0.385116965 0.154504791 C 0.389716357 0.154023945 0.394141912 0.151997551 0.398324192 0.14914684 C 0.402008295 0.14655371 0.406202137 0.148665994 0.410048455 0.147189155 C 0.413396597 0.145574898 0.41648984 0.142981768 0.419849515 0.141333178 C 0.424669027 0.138757244 0.430090904 0.138396576 0.434389055 0.133862957 C 0.438142687 0.130119264 0.442313343 0.127217039 0.446843207 0.126324013 C 0.454640061 0.124726944 0.462483287 0.122769259 0.470384449 0.123421781 C 0.477833748 0.124143071 0.485155612 0.121206515 0.492604941 0.12196213 C 0.499312758 0.122614652 0.505951107 0.119523548 0.512635767 0.121378258 C 0.519227803 0.122906618 0.525808215 0.118991196 0.532377005 0.121137805 C 0.539548278 0.123181388 0.546951294 0.123473302 0.553890824 0.127079621 C 0.561374962 0.130806178 0.569577336 0.130685955 0.576690614 0.136129782 C 0.5843485 0.141882673 0.592562377 0.145643547 0.600451946 0.15055503 C 0.609233618 0.153216809 0.616833508 0.161356822 0.622915745 0.170836255 C 0.626136422 0.17538707 0.630110204 0.17846103 0.633620501 0.182445168 C 0.640664399 0.190567926 0.648831964 0.196183503 0.655817866 0.204443678 C 0.667912841 0.218405217 0.679602385 0.233259827 0.69034189 0.249505401 C 0.695161343 0.259053558 0.701046646 0.267691523 0.704290509 0.278785229 C 0.706445396 0.285499841 0.710268557 0.290617377 0.712550819 0.297246099 C 0.715771556 0.306948841 0.721378744 0.314212948 0.724831164 0.323709577 C 0.727866471 0.332055658 0.733520091 0.337516636 0.736138344 0.346274823 C 0.737968862 0.352113605 0.739903569 0.357883692 0.741838336 0.363671005 C 0.74464196 0.371965498 0.745568752 0.381427795 0.748928547 0.38936162 C 0.752160788 0.396986425 0.754176617 0.405778944 0.754292488 0.414846301 C 0.754396737 0.424789369 0.756053388 0.434492111 0.757119238 0.444280714 C 0.758857012 0.464407325 0.758347332 0.485512912 0.752693713 0.504317164 C 0.749218166 0.513813853 0.745754123 0.523396373 0.741212726 0.531896889 C 0.731944501 0.551834762 0.724263489 0.573661447 0.712574005 0.590868771 C 0.707557559 0.597755134 0.703757584 0.606496096 0.698034465 0.612214684 C 0.692276657 0.617916107 0.687491894 0.625575244 0.681340158 0.630366445 C 0.673786581 0.6361022 0.666962922 0.643623948 0.659478784 0.64954859 C 0.653581858 0.654683292 0.647186875 0.658444166 0.641452134 0.664008141 C 0.634211361 0.671341062 0.62561512 0.674724162 0.617540181 0.679446697 C 0.617980421 0.680683136 0.61845547 0.681902409 0.618942022 0.683138847 C 0.613566458 0.684117675 0.607912838 0.68365401 0.602919638 0.687225997 C 0.597717881 0.691227317 0.591705084 0.690042377 0.586155772 0.691914141 C 0.575416267 0.695623577 0.564190149 0.692429423 0.553531706 0.696945906 C 0.546661675 0.700432003 0.539200783 0.697753012 0.532365501 0.701513886 C 0.519563735 0.707421362 0.505974293 0.704742372 0.492987186 0.708709359 C 0.480127603 0.71028924 0.467673451 0.716402769 0.454697967 0.716505826 C 0.446866333 0.71626544 0.439498127 0.721434414 0.431666493 0.721245527 C 0.422919631 0.721159697 0.414114892 0.722310245 0.405437529 0.720043421 C 0.394918114 0.718807042 0.3843292 0.720009148 0.373786628 0.719871759 C 0.366765976 0.721949697 0.359420896 0.720421255 0.352562457 0.723787189 C 0.345796645 0.726912618 0.338567466 0.726843953 0.331871212 0.730467379 C 0.322475523 0.733541429 0.313971996 0.741561174 0.304194063 0.742093503 C 0.298366636 0.742540002 0.292840511 0.745596766 0.287140518 0.747159541 C 0.283444881 0.748310089 0.279320538 0.749168754 0.276690662 0.753616571 C 0.27290228 0.759970486 0.268859059 0.768144786 0.270874858 0.77709192 C 0.271651089 0.803126037 0.27095598 0.829228878 0.271234006 0.855297387 C 0.270967543 0.866614401 0.272044986 0.878188908 0.269832194 0.889231086 C 0.268395603 0.895808339 0.270202935 0.90266031 0.269252956 0.909323454 C 0.268662095 0.918871582 0.268187076 0.928711593 0.269206583 0.938208282 C 0.272519976 0.945352197 0.279297322 0.944768369 0.284499139 0.944751203 C 0.292967945 0.943840981 0.301494658 0.945111752 0.309917152 0.943257153 C 0.323599339 0.942467153 0.337316245 0.943686485 0.350998402 0.942535818 C 0.360347718 0.940406382 0.369836032 0.94164288 0.379243255 0.940749884 C 0.388210207 0.938843668 0.397281498 0.939530551 0.406317949 0.939204276 C 0.41362825 0.939685166 0.420845896 0.937366843 0.42816779 0.937847614 C 0.436659724 0.938414335 0.445325553 0.936491013 0.453678459 0.939633548 C 0.458312571 0.941608489 0.463039368 0.938431561 0.46774295 0.939650774 C 0.476003259 0.941917598 0.484495252 0.941917598 0.492801845 0.940131664 C 0.497111529 0.939152777 0.501398087 0.941848934 0.50570786 0.940526605 C 0.510712683 0.939273 0.515740633 0.938053668 0.520838141 0.938397169 C 0.526966751 0.938774943 0.532747746 0.93527168 0.538795292 0.934464633 C 0.543336689 0.933812022 0.547657967 0.931030035 0.552268922 0.930995643 C 0.557111561 0.930926979 0.562058449 0.931579471 0.566808403 0.929656088 C 0.57216078 0.927354991 0.578393698 0.928230822 0.582749724 0.922237396 C 0.585043609 0.922872901 0.587453365 0.923679948 0.589735627 0.922443569 C 0.597845256 0.918631136 0.606371999 0.921739399 0.614643872 0.921962678 C 0.618837714 0.920674682 0.623691976 0.920107961 0.627167523 0.916175425 C 0.631280303 0.905442357 0.639250934 0.900565147 0.645136237 0.892408013 C 0.646989882 0.889815032 0.649376452 0.892047465 0.650905669 0.894073844 C 0.650917292 0.891515136 0.650963664 0.888956368 0.651079476 0.886449099 C 0.656953216 0.881726503 0.663510442 0.879013181 0.669059813 0.873397708 C 0.680645049 0.862132251 0.692392468 0.851038516 0.705147803 0.842898548 C 0.710025251 0.840013564 0.715203822 0.837780952 0.719351351 0.832783699 C 0.725665331 0.825227559 0.73333478 0.820814133 0.739729822 0.813412607 C 0.748858988 0.803263426 0.75940156 0.795999348 0.767673433 0.784167171 C 0.77151978 0.778826416 0.776281297 0.775305867 0.780428827 0.770566225 C 0.786800683 0.763405025 0.793010354 0.75595206 0.798976719 0.74808681 C 0.802266955 0.743398666 0.807341337 0.742797554 0.810307145 0.737456799 C 0.817663729 0.725349903 0.826804519 0.716110885 0.834786773 0.704965651 C 0.857864559 0.673367441 0.879610121 0.639622688 0.899640977 0.603748441 C 0.905653775 0.592379987 0.911434829 0.58054781 0.915431678 0.567307472 C 0.924363852 0.538731813 0.935578406 0.511924744 0.945391059 0.484053165 C 0.947823942 0.478386104 0.950778246 0.473148376 0.952272773 0.466725737 C 0.954334855 0.458104879 0.957567215 0.449930578 0.958146453 0.440674335 C 0.958366632 0.435505271 0.95986104 0.430817097 0.961251378 0.426180393 C 0.966464698 0.405658811 0.968353152 0.383711785 0.968781769 0.361902207 C 0.970310986 0.346274823 0.968074977 0.33059594 0.965989709 0.315329194 C 0.965004981 0.308322668 0.964263499 0.301213056 0.962595165 0.294481277 C 0.961100757 0.288402051 0.957752585 0.283576488 0.95706898 0.277033597 C 0.95637387 0.271778673 0.953222752 0.268034995 0.95292151 0.262608349 C 0.952307463 0.258315116 0.952713072 0.253489524 0.950894058 0.249780178 C 0.948229551 0.243941396 0.945136249 0.238377333 0.943595469 0.231611192 C 0.942205131 0.225411803 0.940420985 0.21940127 0.937686861 0.214232206 C 0.935393035 0.210024878 0.93504554 0.204512328 0.933817446 0.19960089 C 0.932983339 0.196011767 0.930770516 0.193830773 0.928963304 0.191409424 C 0.930573523 0.190808371 0.933377206 0.19166702 0.93360883 0.18828395 C 0.93184799 0.183904812 0.929229736 0.179371193 0.931013763 0.174030393 C 0.931210756 0.1758679 0.931430936 0.177705422 0.931650996 0.179577261 C 0.932902157 0.180384398 0.934176624 0.181140006 0.935474217 0.181964323 C 0.936007082 0.180315688 0.936563134 0.178667098 0.937119186 0.177035645 C 0.939088762 0.180092424 0.941301465 0.18325229 0.944325209 0.183630094 C 0.949225903 0.18395634 0.952145219 0.190430567 0.955702007 0.194569245 C 0.95854032 0.197505802 0.958111644 0.203207225 0.959849477 0.207208484 C 0.9630934 0.215090856 0.968723774 0.220414475 0.970820785 0.229413062 C 0.97568655 0.23818846 0.978698671 0.248698279 0.981977224 0.258881807 C 0.982915699 0.259603083 0.983865619 0.260324329 0.98482734 0.261097133 C 0.984919965 0.268447131 0.989067554 0.2735475 0.989623606 0.280657053 C 0.990295529 0.286993861 0.99393332 0.291630566 0.994327188 0.298104763 C 0.995161235 0.306931674 0.996933818 0.315466613 0.998173535 0.324173301 C 0.999610126 0.342891753 1.00038624 0.361730456 0.999806941 0.380586296 C 0.9987064 0.397055179 0.99826616 0.413661361 0.995879531 0.429906994 C 0.995080233 0.440176368 0.992160738 0.449638665 0.990619957 0.459650487 C 0.989646792 0.465540797 0.987121165 0.470744133 0.986982167 0.476977915 C 0.986669302 0.484190553 0.983170569 0.489771754 0.981826782 0.496520698 C 0.979220092 0.509314537 0.97458601 0.52090627 0.969523132 0.53184545 C 0.966279328 0.540380299 0.964112878 0.549773932 0.960278094 0.557845235 C 0.955817819 0.567067087 0.953431308 0.578092098 0.948762417 0.587125063 C 0.946503222 0.591521323 0.945124626 0.596673191 0.943572283 0.601636231 C 0.941486895 0.60845381 0.937188804 0.612935901 0.934697926 0.619375765 C 0.928071201 0.636480033 0.919370651 0.651540697 0.910473108 0.666103303 C 0.904587865 0.676819205 0.897219658 0.685405672 0.891009986 0.695657969 C 0.882205129 0.708949804 0.873319328 0.722121358 0.864190161 0.734949529 C 0.859347522 0.740891397 0.854296267 0.746558428 0.850241423 0.753771067 C 0.844020188 0.764675915 0.835759878 0.772334993 0.828843534 0.782175064 C 0.824093521 0.788855314 0.818706453 0.794470906 0.814188182 0.801511765 C 0.81156987 0.806097031 0.807028472 0.807350636 0.805198014 0.813000441 C 0.800320685 0.814855158 0.795327425 0.816744149 0.791110396 0.820985913 C 0.787843347 0.824265897 0.786325634 0.830808759 0.782154977 0.832113922 C 0.777706206 0.833779752 0.775284946 0.840047836 0.771484971 0.843310714 C 0.768275797 0.846058309 0.765889287 0.850351572 0.762865543 0.85339123 C 0.759575367 0.855606496 0.756018698 0.857169271 0.753261387 0.860809922 C 0.74875474 0.866631567 0.742857814 0.869104445 0.738119483 0.874376476 C 0.735072553 0.877604961 0.732129931 0.881056786 0.729372621 0.884800434 C 0.728712261 0.884405494 0.728086591 0.883958995 0.727484226 0.883478224 C 0.724483609 0.888681531 0.719583094 0.889316916 0.715864182 0.892940402 C 0.706144154 0.901526868 0.695566893 0.907537401 0.685591936 0.915351152 C 0.681490779 0.918407857 0.676914573 0.919609964 0.67268604 0.922168732 C 0.668816507 0.924950719 0.66581589 0.930240035 0.661390424 0.931201696 C 0.657022715 0.932232022 0.6538831 0.938225508 0.649330139 0.938088059 C 0.637397349 0.938242555 0.626541972 0.947430134 0.614620745 0.947996795 C 0.60626775 0.949971676 0.597497702 0.949834287 0.589712501 0.955346823 C 0.583329022 0.96041286 0.576007128 0.955501437 0.569322407 0.958334923 C 0.564514577 0.960378468 0.559834063 0.963263512 0.55479455 0.963778675 C 0.547947586 0.964654505 0.542270899 0.971214592 0.535609365 0.973086476 C 0.529758811 0.97478658 0.523711264 0.974941075 0.517999768 0.977602959 C 0.51422298 0.979337335 0.510747373 0.982342601 0.506889462 0.983733714 C 0.496428043 0.985124707 0.48573488 0.984609485 0.475505084 0.98862797 C 0.46855396 0.990534127 0.461440593 0.988868415 0.454466254 0.990293682 C 0.443946898 0.992182791 0.433346361 0.990894794 0.422792226 0.991461515 C 0.41450873 0.993573785 0.406086326 0.992045343 0.39776805 0.993436396 C 0.393991321 0.99412334 0.390226096 0.992835343 0.386449307 0.992818177 C 0.382174343 0.992732346 0.377992094 0.994586945 0.373717129 0.994449615 C 0.368677497 0.994604111 0.363649547 0.991959512 0.358656317 0.99381423 C 0.351589262 0.996372998 0.344313771 0.995394111 0.337119311 0.995651662 C 0.331917554 0.994398057 0.326657861 0.994672894 0.321444511 0.995548606 C 0.313357949 0.995067835 0.305294663 0.996579051 0.297208101 0.996063888 C 0.289793611 0.995651662 0.282541215 0.998656869 0.275126666 0.998193324 C 0.263900578 0.997334659 0.25267446 1.00191975 0.241494671 0.999034762 C 0.236038029 0.996767938 0.230419174 0.991547406 0.228496045 0.983270049 C 0.227557614 0.969634712 0.230697244 0.956360102 0.232527688 0.943171203 C 0.23317647 0.936164737 0.232747823 0.929037929 0.233524039 0.922065735 C 0.234439254 0.912826657 0.23358196 0.90345031 0.234474003 0.894228339 C 0.235481948 0.882636666 0.238563597 0.871216714 0.236988023 0.859401703 C 0.237300813 0.846934199 0.237463027 0.834329307 0.239247158 0.822067797 C 0.240787983 0.813034832 0.238656297 0.803916037 0.239328235 0.794797182 C 0.236825809 0.782862008 0.23738192 0.770343006 0.237497777 0.758012831 C 0.237764254 0.749804139 0.239814833 0.741921842 0.239733726 0.733661532 C 0.239316672 0.723512411 0.243290395 0.714273334 0.247565359 0.706889033 C 0.254678696 0.698354006 0.263564587 0.692446649 0.272763282 0.691622257 C 0.277744919 0.69064337 0.282633901 0.688599825 0.287708193 0.688737214 C 0.293570399 0.689080715 0.298853278 0.684735894 0.304460496 0.68294996 C 0.309129387 0.681541741 0.313462257 0.678433478 0.318131059 0.677042484 C 0.325313926 0.675977767 0.33219558 0.672508776 0.339366853 0.671203613 C 0.348391742 0.66770041 0.357694715 0.665828586 0.367032409 0.666378021 C 0.377737164 0.665141642 0.388523042 0.664540648 0.399227798 0.666292191 C 0.408901513 0.667133629 0.418644696 0.665313303 0.428283602 0.667494297 C 0.435223162 0.668971181 0.442290217 0.6673913 0.449218154 0.669142962 C 0.453261405 0.670087457 0.457339436 0.669177234 0.461417407 0.669280291 C 0.478181273 0.670104623 0.494979888 0.670396566 0.511755288 0.669743955 C 0.517478406 0.66831857 0.523560703 0.669314623 0.528959453 0.665673971 C 0.53397578 0.662273765 0.539687335 0.663098037 0.54484278 0.660298884 C 0.550079346 0.657619894 0.555605531 0.656795621 0.56107372 0.655799568 C 0.56478101 0.654168129 0.567665696 0.649411201 0.571732163 0.64923948 C 0.580479026 0.64774549 0.587406933 0.638764083 0.595759928 0.635432482 C 0.609870791 0.629215896 0.622834682 0.618603051 0.634906471 0.606307209 C 0.643004537 0.598064184 0.652203262 0.592414379 0.659814775 0.583158135 C 0.665456772 0.576477826 0.672037244 0.571720898 0.677354813 0.564405203 C 0.683888912 0.556368291 0.689113855 0.546390831 0.694987595 0.537357986 C 0.699586928 0.530454397 0.701602757 0.521009326 0.705147803 0.513058245 C 0.710419118 0.499920905 0.719154418 0.489462674 0.721575677 0.474058509 C 0.721876919 0.461831391 0.723545194 0.449587077 0.72202754 0.437377155 C 0.721969604 0.427914858 0.718633056 0.419397175 0.71838975 0.409986317 C 0.718366623 0.402224243 0.7151227 0.395887434 0.713014245 0.389155567 C 0.710847795 0.382664263 0.709666073 0.3753829 0.706491768 0.369733036 C 0.7039662 0.365250885 0.701591134 0.360562652 0.69988817 0.355273426 C 0.696632683 0.345381796 0.691743672 0.33679533 0.689229727 0.326371431 C 0.687016964 0.316771716 0.681548655 0.310091466 0.678559661 0.301109999 C 0.676346898 0.293536752 0.67029947 0.291974068 0.66669637 0.286324143 C 0.661911666 0.2795237 0.654798388 0.278201342 0.650152683 0.271211952 C 0.642263114 0.259465665 0.63170898 0.253008693 0.62297368 0.242876634 C 0.616196334 0.234496281 0.607750654 0.230203062 0.600382447 0.223213658 C 0.592666686 0.217632458 0.585680783 0.209938973 0.577536345 0.205680117 C 0.563691974 0.197522983 0.549639106 0.18843849 0.534566641 0.18733941 C 0.526850939 0.187631369 0.519250989 0.184935212 0.511535168 0.185433239 C 0.503657222 0.185021102 0.495883495 0.187631369 0.488017142 0.187236369 C 0.481992811 0.186961591 0.476466686 0.191014439 0.470743567 0.193109527 C 0.459378451 0.197969452 0.447387666 0.198209897 0.436068863 0.203310251 C 0.431411654 0.205405354 0.426650137 0.206865057 0.42188853 0.208307579 C 0.416594058 0.209870324 0.411554515 0.212858394 0.406236857 0.21428372 C 0.402402133 0.215296924 0.398544312 0.216207087 0.394825429 0.217924371 C 0.38539502 0.22245805 0.375466436 0.22450164 0.365595847 0.225171342 C 0.361205012 0.225806788 0.357335567 0.229670703 0.352898419 0.229945421 C 0.345483899 0.230203062 0.33850956 0.234393254 0.331176072 0.235560998 C 0.321896285 0.237759128 0.312407941 0.238154069 0.303336769 0.242052361 C 0.289191157 0.246534467 0.274929702 0.250552922 0.2604945 0.252441972 C 0.252280563 0.253747106 0.244182453 0.256391764 0.236072779 0.258744448 C 0.232539296 0.260083944 0.228229582 0.261423409 0.226375937 0.266626805 C 0.220583305 0.285671562 0.221985117 0.306983173 0.21957539 0.327092648 C 0.218301013 0.338461131 0.219691262 0.350052834 0.218440026 0.361404181 C 0.216818109 0.376104176 0.21882236 0.391078919 0.217211992 0.405761868 C 0.216122985 0.416907072 0.216957122 0.428189695 0.216876045 0.439403564 C 0.216655925 0.453244925 0.21922785 0.467206508 0.216783345 0.480893403 C 0.215091914 0.490596026 0.21448946 0.502084732 0.208893806 0.508868039 C 0.205128595 0.512560248 0.200459734 0.51321274 0.196138427 0.514449239 C 0.192014083 0.51611495 0.188723877 0.511100531 0.185190395 0.508902431 C 0.178447768 0.503286839 0.169619814 0.5042485 0.164000973 0.495593399 C 0.152670592 0.478643745 0.146611497 0.456061304 0.140193298 0.43462953 C 0.133068338 0.415327072 0.127797067 0.394719571 0.121448338 0.374867737 C 0.118216082 0.364512473 0.115817927 0.353659153 0.112574071 0.343321085 C 0.110141166 0.335799336 0.110326536 0.327127039 0.107766166 0.319691122 C 0.103861943 0.308082223 0.103375383 0.294481277 0.0984748155 0.283542156 C 0.0955784991 0.277136624 0.0935163274 0.269494653 0.0890675932 0.265046865 C 0.0781195238 0.252751052 0.0679129213 0.239132941 0.0579148494 0.225205734 C 0.0497472659 0.211141095 0.0419619791 0.196183503 0.0319755003 0.184780657 C 0.0249084923 0.176468968 0.0153622609 0.174871892 0.00841111317 0.166405603 C 0.00330201467 0.158626273 -0.00143634714 0.147584096 0.000405702856 0.136284336 C 0.00309348875 0.12635839 0.00819099043 0.118063845 0.0140531221 0.111984663 C 0.0193243958 0.106626667 0.0235298462 0.0993110389 0.028928576 0.0942106768 C 0.0334236585 0.089316383 0.0390077531 0.0868434832 0.0429582931 0.0808501467 C 0.044557061 0.0786691532 0.0459125526 0.0759558529 0.0478820242 0.0744618177 C 0.0555746444 0.0694473013 0.0641940683 0.0651884526 0.0694769397 0.0549190231 C 0.0734391063 0.048101373 0.0781890303 0.042382814 0.0833213255 0.0376087427 C 0.0881059989 0.0333326496 0.0902840346 0.0250209607 0.0949876383 0.0205731802 C 0.0991467386 0.0164860152 0.103468053 0.0126908151 0.107071079 0.00750461128 Z " autoclosed="0" handlesArray="F1 M 0.107071079 0.00750461128 L 0.107071079 0.00750461128 ">
+                                        <drawers count="2">
+                                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                                <solidfiller fill="0,0,0,1" />
+                                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="2">
+                                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                                <brush angle="0.785398" roundness="0.333333" />
+                                            </_0>
+                                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                                <solidfiller fill="0.796078,0.243137,0.211765,1" />
+                                                <gradientfiller startpoint="-1,0.5" endpoint="2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="3">
+                                                        <_0 color="0.0297045,0,0,1" colorlocation="0.0297045" />
+                                                        <_1 color="0,0,0,1" colorlocation="0.0297046" />
+                                                        <_2 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                            </_1>
+                                        </drawers>
+                                    </_1>
+                                    <_2 class="PathShape" name="Shape 4" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(0.2656269162513548,0, 0,0.7171680346827118, 0,0.2828319784349628)" pivotPoint="0.5,0.5" d="M 0.2420623 0.00039921797 C 0.267330229 -0.000559739245 0.296366453 -6.82617756e-05 0.316953659 0.0049783173 C 0.332384199 0.0103365742 0.351067334 0.014927635 0.362769008 0.0211849287 C 0.373756856 0.0262075458 0.387005627 0.0307147242 0.398072779 0.035725344 C 0.430520356 0.047436811 0.469592422 0.0573022105 0.502357304 0.0689537153 C 0.520802557 0.0742640197 0.533535659 0.0810247883 0.550830424 0.0866587237 C 0.565903962 0.0917652622 0.575542986 0.0981903896 0.592917144 0.102709495 C 0.629093468 0.112622887 0.656582713 0.124957711 0.691846728 0.135122791 C 0.707792819 0.139605969 0.717392325 0.145659462 0.732505441 0.150358409 C 0.751664579 0.156363979 0.763723373 0.163963869 0.781216562 0.170376956 C 0.816718459 0.185205057 0.850792408 0.200368822 0.889190197 0.21453765 C 0.901962936 0.220147625 0.92207408 0.224247202 0.944128931 0.225649685 C 0.955315053 0.221789852 0.962891459 0.217018992 0.975624561 0.213530689 C 0.98010695 0.21231997 0.98482734 0.210545897 0.991610348 0.21097742 C 0.998433053 0.217941955 1.0019635 0.225350007 0.998869479 0.232614279 C 0.993673086 0.240669608 0.995418489 0.24890478 0.991689742 0.257020086 C 0.992364049 0.2668975 0.984986007 0.276547134 0.980820894 0.286292702 C 0.976695597 0.299910069 0.963089764 0.313191861 0.963446856 0.326941073 C 0.960511386 0.337681592 0.954045653 0.348350167 0.954323351 0.359150618 C 0.95472008 0.365995228 0.951427758 0.372791916 0.948492289 0.379552692 C 0.946746945 0.383592337 0.950396359 0.387596101 0.950753331 0.391623765 C 0.949087262 0.396430612 0.943692625 0.401081622 0.944089353 0.405972421 C 0.944208324 0.411822081 0.941431582 0.417659879 0.935997248 0.423281848 C 0.932982504 0.426650226 0.928103507 0.430030555 0.930047154 0.433614761 C 0.932427227 0.438109934 0.926358163 0.442425281 0.924692094 0.446848541 C 0.922986448 0.454796046 0.921122074 0.462743521 0.918742061 0.470667005 C 0.908984005 0.483673036 0.908587277 0.497134656 0.897996247 0.510092735 C 0.889110744 0.520317733 0.892085791 0.530998349 0.895735204 0.541367173 C 0.896925151 0.551376522 0.895219505 0.561421752 0.898868918 0.57139504 C 0.894426107 0.592492402 0.900376201 0.613709688 0.893196464 0.634771109 C 0.891649544 0.640524924 0.896766603 0.646170795 0.896330178 0.65192467 C 0.896012902 0.658553541 0.897837579 0.665266395 0.893632889 0.671835303 C 0.888634801 0.680753767 0.896726906 0.689983904 0.888039827 0.698770404 C 0.883438408 0.703948855 0.884469807 0.709355116 0.881931067 0.714641452 C 0.87895602 0.721558094 0.88252604 0.728594542 0.878242016 0.735487103 C 0.874553025 0.74176836 0.868126988 0.747989655 0.86888057 0.754450738 C 0.86836499 0.757867038 0.871022642 0.761774838 0.863565207 0.764723659 C 0.858130813 0.766893387 0.851982474 0.769662499 0.842145026 0.769854188 C 0.831395268 0.770681381 0.834410012 0.765910506 0.831077874 0.764016449 C 0.820843875 0.762757897 0.809380054 0.762949586 0.799145997 0.761786878 C 0.792561233 0.759317577 0.79208529 0.755889118 0.788951516 0.752952337 C 0.777408421 0.741492689 0.782604814 0.729409575 0.781771839 0.717638254 C 0.782287478 0.708875597 0.779867887 0.700065076 0.783993185 0.691350341 C 0.786928594 0.682359993 0.783120453 0.673237801 0.789705217 0.664343357 C 0.796845376 0.654657722 0.791410863 0.644684434 0.795496583 0.634914935 C 0.798630297 0.62771064 0.791728258 0.620566249 0.793037236 0.613362014 C 0.794187605 0.606433451 0.787602842 0.599600792 0.790577888 0.59268415 C 0.793830633 0.584796667 0.784508824 0.577088952 0.785381496 0.569225311 C 0.785976529 0.560954213 0.786373198 0.552647114 0.781573534 0.54447186 C 0.775068104 0.533539593 0.778876185 0.522427499 0.777527392 0.511399329 C 0.778836489 0.500970542 0.771260083 0.490709484 0.773203731 0.480280727 C 0.774830103 0.46811375 0.771022081 0.455850899 0.77717042 0.443767846 C 0.778479517 0.437954098 0.776575446 0.432080388 0.779986858 0.426314563 C 0.783001482 0.415022701 0.779947162 0.403634906 0.783199906 0.392354965 C 0.789030969 0.381170988 0.782485783 0.369939059 0.77792412 0.358850926 C 0.776694417 0.349333137 0.768602312 0.340007097 0.76951474 0.330465317 C 0.769911408 0.32442382 0.762255728 0.318670005 0.762295306 0.312652409 C 0.762097001 0.306335241 0.763286948 0.299970001 0.759518683 0.293724746 C 0.757336915 0.290248424 0.761502028 0.286820143 0.763207674 0.283415735 C 0.768205762 0.276283443 0.761700332 0.268683583 0.771220386 0.261802971 C 0.777606845 0.256804347 0.796607375 0.253328025 0.793949604 0.247418374 C 0.794941306 0.243378714 0.78914994 0.23960273 0.780343831 0.236665875 C 0.763247371 0.230624378 0.74718219 0.22431913 0.731632769 0.217918023 C 0.691489756 0.197839558 0.639605224 0.180278361 0.590775132 0.162153795 C 0.572210968 0.15577662 0.552099764 0.149831042 0.533337235 0.143501788 C 0.505570292 0.133168876 0.469512999 0.124957711 0.446228474 0.113509923 C 0.428894013 0.106809154 0.412908196 0.0996527895 0.391408622 0.0940668061 C 0.355866998 0.0841534138 0.321555048 0.0737965405 0.284704357 0.0643266961 C 0.28046 0.0660768077 0.277802318 0.06809064 0.276175976 0.0702003911 C 0.260666132 0.0718066692 0.267766565 0.0770210847 0.26744923 0.0807011425 C 0.264672548 0.0928321332 0.274470299 0.104855239 0.273042291 0.116998225 C 0.272010922 0.12506555 0.277802318 0.13301304 0.277722985 0.141080365 C 0.281927675 0.156687662 0.288195074 0.172258943 0.293153435 0.187842235 C 0.291289091 0.195238292 0.301959515 0.202190891 0.300690204 0.209562942 C 0.300372869 0.215065077 0.305251896 0.220447302 0.304974198 0.225961357 C 0.304815561 0.231079891 0.30953595 0.236078516 0.309099555 0.241209045 C 0.30890125 0.245632306 0.309178948 0.250079483 0.31171757 0.254454821 C 0.315684289 0.263541102 0.310249925 0.272807151 0.316318959 0.281845421 C 0.324133366 0.294000417 0.318461031 0.306407154 0.321555048 0.318657994 C 0.327465385 0.332910717 0.323141694 0.347331226 0.326275438 0.3616319 C 0.331114829 0.37141344 0.326275438 0.381338775 0.330638826 0.391132325 C 0.335478216 0.401009709 0.329409152 0.411114872 0.336945862 0.420908362 C 0.340952158 0.430318296 0.33262217 0.439692199 0.332463473 0.449102134 C 0.333375871 0.462287992 0.333732843 0.475497872 0.332423776 0.48868373 C 0.33020243 0.495636255 0.327425808 0.502600789 0.328496784 0.509613216 C 0.330123127 0.517884374 0.317469358 0.525616109 0.317032963 0.533827305 C 0.316675961 0.537771046 0.318064332 0.541714847 0.316913962 0.545658588 C 0.315565288 0.549039006 0.311439991 0.552263558 0.310130924 0.555667818 C 0.307552606 0.572174191 0.280896336 0.587925315 0.288195074 0.604623377 C 0.283990383 0.609849751 0.276334614 0.614860356 0.27637431 0.62035054 C 0.27101925 0.630275905 0.270900249 0.64042896 0.262014866 0.650162578 C 0.261221468 0.658277869 0.256778777 0.666297257 0.254319459 0.674364626 C 0.255231768 0.681389034 0.249321371 0.688245714 0.249440372 0.69524622 C 0.249004021 0.703793049 0.238968268 0.712040186 0.238333642 0.720587015 C 0.244204357 0.732190669 0.23313722 0.743746161 0.230122551 0.755277932 C 0.2302019 0.760648131 0.228575528 0.766006351 0.228456542 0.77138859 C 0.229646564 0.77749002 0.231510922 0.783639431 0.228020191 0.789716959 C 0.222070143 0.800565243 0.228773877 0.811605513 0.224886537 0.822501779 C 0.219333112 0.831492126 0.22567986 0.84065038 0.223577514 0.849712551 C 0.222070143 0.853212833 0.220721483 0.856761038 0.222704828 0.860285282 C 0.227385506 0.868400633 0.226155847 0.876695633 0.224965826 0.884894788 C 0.221514806 0.891691566 0.226314545 0.898488343 0.225322872 0.905308962 C 0.224807173 0.91040349 0.228654891 0.916085422 0.242696986 0.919369876 C 0.260904133 0.923277676 0.284307718 0.92313385 0.305688232 0.923325658 C 0.350154936 0.924608231 0.395097733 0.926682115 0.439723134 0.924632251 C 0.488196254 0.924740195 0.536669374 0.924092889 0.585182071 0.924392521 C 0.607633591 0.924752057 0.629569471 0.922606468 0.652060688 0.923181832 C 0.680898607 0.923925042 0.709220767 0.921803296 0.737939775 0.921563625 C 0.73595643 0.916864574 0.739923179 0.912273586 0.747578859 0.90819788 C 0.758090615 0.902611852 0.748649836 0.89351362 0.77205348 0.890456855 C 0.772846758 0.889425993 0.773838401 0.888407111 0.774750769 0.887436211 C 0.776734114 0.887328207 0.780700862 0.887100577 0.782684207 0.886992574 C 0.786968172 0.887891591 0.791014314 0.888898611 0.795298278 0.889833629 C 0.799344301 0.888970494 0.802755713 0.887855768 0.806841373 0.887028575 C 0.832148969 0.891391873 0.85229975 0.899207532 0.854997098 0.908161879 C 0.858884513 0.916109383 0.855790496 0.924152732 0.856187165 0.932160199 C 0.856345892 0.935600519 0.85535419 0.93904084 0.853846848 0.942457139 C 0.85126853 0.95178318 0.855235219 0.961229026 0.850237131 0.970519066 C 0.847500086 0.976212978 0.84642911 0.981978834 0.843652368 0.987684608 C 0.837067664 0.989542663 0.827468276 0.989171147 0.819177806 0.989314973 C 0.799304664 0.989278972 0.779391766 0.989398837 0.759518683 0.989291012 C 0.74349314 0.989542663 0.734925091 0.984268308 0.719732642 0.983549118 C 0.690577388 0.982206523 0.661699772 0.985179305 0.632425487 0.984531999 C 0.602000833 0.985215306 0.575622261 0.979053915 0.545356333 0.979521453 C 0.508624732 0.979653299 0.471932739 0.979545414 0.435201049 0.979545414 C 0.416319489 0.979617298 0.397636384 0.977831185 0.378754824 0.978790224 C 0.355391026 0.980252624 0.332185775 0.977879226 0.308702976 0.978250742 C 0.288988382 0.97846657 0.267647564 0.975241959 0.249083385 0.9782269 C 0.226631835 0.982350409 0.233176917 0.992431641 0.211280704 0.996627092 C 0.191209212 1.00134993 0.164552957 0.999635875 0.141070083 0.999923587 C 0.131827667 1.00022328 0.125639617 0.997765839 0.121276222 0.995692074 C 0.111637168 0.991041064 0.119967207 0.984855652 0.108503439 0.980468452 C 0.0930333212 0.973695695 0.0623707287 0.973899364 0.041783534 0.969236493 C 0.0145323081 0.964681327 -0.00704656215 0.954851925 0.00215615588 0.945250213 C 0.00624185475 0.937866092 0.0260357205 0.932615697 0.0449172035 0.928396225 C 0.054952953 0.926046789 0.0679637343 0.925711095 0.0795465559 0.924476385 C 0.10009405 0.921791315 0.114770837 0.915486038 0.115246877 0.908677399 C 0.115881503 0.898871839 0.112708189 0.889018476 0.116952531 0.879260898 C 0.118896239 0.874645889 0.113263525 0.870066702 0.116040207 0.865463674 C 0.118142553 0.8616997 0.119887911 0.857887864 0.118340902 0.854087889 C 0.115484871 0.844953716 0.116714537 0.835783482 0.118261553 0.826661289 C 0.113184176 0.819469035 0.120086201 0.812324703 0.119173877 0.805108428 C 0.119768918 0.797508597 0.11734923 0.789860785 0.121434927 0.782320857 C 0.124132253 0.776890635 0.122823231 0.77138859 0.120006911 0.766006351 C 0.116119497 0.75863421 0.124409951 0.751405954 0.123854615 0.744033992 C 0.12726599 0.736937523 0.127821311 0.72978121 0.125837967 0.722636819 C 0.127622977 0.716331542 0.126353592 0.709990442 0.128455952 0.703721106 C 0.135001034 0.6957497 0.136032358 0.687550485 0.135516733 0.679387212 C 0.134882048 0.675131798 0.143291429 0.671343803 0.142934442 0.66711241 C 0.143053442 0.66294086 0.142180756 0.65876931 0.142775744 0.654609799 C 0.143132791 0.649587214 0.148725793 0.644780338 0.150431514 0.639805615 C 0.153049543 0.631738305 0.159951568 0.623850763 0.161815926 0.615747392 C 0.162648961 0.608579159 0.166496664 0.601482749 0.167369351 0.594326377 C 0.171455041 0.587433755 0.181411445 0.580888867 0.181728795 0.573792458 C 0.181689143 0.5655213 0.192438871 0.557717681 0.193906531 0.549506485 C 0.194818914 0.53884989 0.198904619 0.528229296 0.20628269 0.51781249 C 0.212629378 0.509397507 0.20763135 0.500718772 0.212669075 0.492267877 C 0.215644106 0.486633897 0.213145062 0.480915993 0.215485409 0.475294024 C 0.217349753 0.470870763 0.226473182 0.466591358 0.221395805 0.462084234 C 0.217072114 0.458140433 0.222109795 0.454124749 0.222070143 0.450133026 C 0.222387493 0.440615207 0.220642135 0.431037515 0.224846825 0.421579629 C 0.225917846 0.418834597 0.225045174 0.416077554 0.223617151 0.413368464 C 0.220047146 0.406691611 0.22254613 0.399918854 0.222070143 0.39320606 C 0.221911505 0.382873148 0.218500137 0.372588158 0.219412461 0.362267226 C 0.218896776 0.357280552 0.211796403 0.352485687 0.214136735 0.34745115 C 0.216913417 0.340702385 0.214731723 0.333929598 0.213779747 0.327168822 C 0.209059373 0.314929992 0.208464384 0.302595198 0.202871323 0.290368348 C 0.202236637 0.28160575 0.201482952 0.272843152 0.196445227 0.264188379 C 0.192557871 0.259021938 0.200848266 0.253759563 0.195136264 0.248653024 C 0.190693513 0.243966073 0.191248849 0.239075303 0.189622551 0.234280437 C 0.179031402 0.219092742 0.180618122 0.203449532 0.171772391 0.188177913 C 0.165147945 0.178144678 0.16891636 0.167811766 0.16094324 0.15785037 C 0.157412887 0.148848087 0.1570559 0.139701888 0.150352165 0.130819365 C 0.142299756 0.119959019 0.144957438 0.108703069 0.137579367 0.0978187919 C 0.133573025 0.0918971375 0.135199383 0.0858316422 0.132858992 0.0798740312 C 0.130241007 0.0730053782 0.128931984 0.0660168901 0.132541701 0.05916024 C 0.136111706 0.0537899844 0.126036257 0.0482878871 0.133533373 0.0430135503 C 0.138967738 0.0361569002 0.163402647 0.0335077159 0.174945697 0.0278378166 C 0.189622551 0.0224436 0.193509907 0.0148797128 0.211955041 0.0103725335 C 0.223220468 0.00738774566 0.231272921 0.00350388489 0.2420623 0.00039921797 Z " autoclosed="0" handlesArray="F1 M 0.2420623 0.00039921797 L 0.2420623 0.00039921797 ">
+                                        <drawers count="2">
+                                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                                <solidfiller fill="0,0,0,1" />
+                                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="2">
+                                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                                <brush angle="0.785398" roundness="0.333333" />
+                                            </_0>
+                                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                                <solidfiller fill="0.796078,0.243137,0.211765,1" />
+                                                <gradientfiller startpoint="-1,0.5" endpoint="2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="3">
+                                                        <_0 color="0.0297045,0,0,1" colorlocation="0.0297045" />
+                                                        <_1 color="0,0,0,1" colorlocation="0.0297046" />
+                                                        <_2 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                            </_1>
+                                        </drawers>
+                                    </_2>
+                                    <_3 class="PathShape" name="Shape 5" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(0.07230491656840558,0, 0,0.0363407333808508, 0.397002874356935,0.3266375344102839)" pivotPoint="0.5,0.5" d="M 0.877118409 0.00443263073 C 0.923895538 -0.0175673664 0.972568035 0.0458308011 0.985537767 0.116799094 C 1.01205981 0.344370633 1.00419009 0.58566314 0.944443285 0.79856801 C 0.918941379 0.872374892 0.886735857 0.953515112 0.833255053 0.976934433 C 0.758060515 1.01147282 0.672665894 1.01076245 0.602572262 0.950439751 C 0.547634542 0.897923887 0.509599686 0.799987316 0.443877578 0.77846086 C 0.370140791 0.753148675 0.293198496 0.730675101 0.218149796 0.756459415 C 0.141353369 0.78532064 0.0724248663 0.711040139 0 0.685019016 C 0.00102018123 0.655212104 0.000728446757 0.625405192 0.00160276075 0.59583509 C 0.0473606028 0.532673657 0.104047813 0.497189552 0.162337795 0.478028148 C 0.164668992 0.465726525 0.169040561 0.440887898 0.171226799 0.42858699 C 0.191773623 0.457683533 0.218441531 0.468801945 0.241612196 0.49080193 C 0.253415883 0.468329072 0.264636099 0.444909036 0.276148915 0.421962589 C 0.288389325 0.438049287 0.29757008 0.458866775 0.309519619 0.476135254 C 0.360085756 0.441124707 0.419541776 0.416048586 0.447666556 0.331596851 C 0.463405102 0.341768801 0.48001796 0.349338919 0.495901495 0.360220522 C 0.536705196 0.26275754 0.619913518 0.282628566 0.672957659 0.21378924 C 0.736201763 0.133121863 0.798718333 0.0434650481 0.877118409 0.00443263073 Z " autoclosed="0" handlesArray="F1 M 0.877118409 0.00443263073 L 0.877118409 0.00443263073 ">
+                                        <drawers count="2">
+                                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                                <solidfiller fill="0,0,0,1" />
+                                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="2">
+                                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                                <brush angle="0.785398" roundness="0.333333" />
+                                            </_0>
+                                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                                <solidfiller fill="0.796078,0.243137,0.211765,1" />
+                                                <gradientfiller startpoint="-1,0.5" endpoint="2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="3">
+                                                        <_0 color="0.0297045,0,0,1" colorlocation="0.0297045" />
+                                                        <_1 color="0,0,0,1" colorlocation="0.0297046" />
+                                                        <_2 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                            </_1>
+                                        </drawers>
+                                    </_3>
+                                    <_4 class="PathShape" name="Shape 6" visible="1" printable="1" locked="0" opacity="1" blendmode="0" unfolded="0" ctm="(0.02612314235157059,0, 0,0.05065237868564679, 0.2041059669514869,0.8440938011326955)" pivotPoint="0.5,0.5" d="M 0.754363298 0.0638154596 C 0.801957667 0.0427701585 0.845518291 0.0201979391 0.894726396 0 C 0.998790026 0.0796004757 0.899163842 0.170910746 0.939900815 0.255771518 C 0.978219032 0.338255912 0.983462751 0.422437131 1 0.506278574 C 1 0.562117636 0.955631852 0.61609 0.94070828 0.671589255 C 0.915701091 0.768159807 0.792277753 0.857093751 0.810427547 0.956210494 C 0.795907736 0.955872834 0.766866863 0.955023408 0.7523458 0.954683602 C 0.74105221 0.939578116 0.729354858 0.924812436 0.716851294 0.910386562 C 0.632149875 0.933638275 0.560757101 0.964526713 0.504289091 1 C 0.380462021 0.942124367 0.239695132 0.887984216 0.0614162609 0.862693787 C -0.0365961902 0.690258205 -0.00271538761 0.509164572 0.0618200004 0.335539788 C 0.068677403 0.294296563 0.1517663 0.269178092 0.208234295 0.239646718 C 0.280835837 0.205362633 0.262282342 0.152749375 0.325607717 0.117278159 C 0.446611106 0.0789209232 0.6027053 0.0582153946 0.754363298 0.0638154596 Z " autoclosed="0" handlesArray="F1 M 0.754363298 0.0638154596 L 0.754363298 0.0638154596 ">
+                                        <drawers count="2">
+                                            <_0 class="0" name="Stroke" enabled="0" opacity="1" blendmode="0" fillmode="0" stroke="1" salign="0" smode="0">
+                                                <solidfiller fill="0,0,0,1" />
+                                                <gradientfiller startpoint="0,0.5" endpoint="1,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="2">
+                                                        <_0 color="0,0,0,1" colorlocation="0" />
+                                                        <_1 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                                <style linecapstyle="0" linejoinstyle="0" flatness="0.1" miterlimit="10" linedashphase="0" />
+                                                <arrows startarrowstyle="0" startarrowscale="1" endarrowstyle="0" endarrowscale="1" />
+                                                <brush angle="0.785398" roundness="0.333333" />
+                                            </_0>
+                                            <_1 class="1" name="Fill" enabled="1" opacity="1" blendmode="0" fillmode="1" winding="0">
+                                                <solidfiller fill="0.796078,0.243137,0.211765,1" />
+                                                <gradientfiller startpoint="-1,0.5" endpoint="2,0.5" middlepoint="0,0" gradientroundness="1" gradientstyle="0">
+                                                    <gradient count="3">
+                                                        <_0 color="0.0297045,0,0,1" colorlocation="0.0297045" />
+                                                        <_1 color="0,0,0,1" colorlocation="0.0297046" />
+                                                        <_2 color="1,0,0,1" colorlocation="1" />
+                                                    </gradient>
+                                                </gradientfiller>
+                                                <pdfShadingFiller ignoreBackground="0" ctm="(1,0, 0,1, 0,0)" />
+                                            </_1>
+                                        </drawers>
+                                    </_4>
+                                </Objects>
+                            </_0>
+                        </Objects>
+                    </_3>
+                </Objects>
+            </_0>
+        </Objects>
+    </Drawing>
+</Document>
