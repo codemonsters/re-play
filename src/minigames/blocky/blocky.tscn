@@ -3,14 +3,15 @@
 [ext_resource path="res://minigames/blocky/crt_material.tres" type="Material" id=1]
 [ext_resource path="res://minigames/blocky/menu.tscn" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="CanvasLayer"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 1.12245 )
 
-[node name="Node2D" parent="CanvasLayer" instance=ExtResource( 2 )]
-
-[node name="crt_shader" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 material = ExtResource( 1 )
+margin_right = 785.0
+margin_bottom = 480.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
