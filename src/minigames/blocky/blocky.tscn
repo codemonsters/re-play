@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://minigames/blocky/crt_material.tres" type="Material" id=1]
+[ext_resource path="res://minigames/blocky/menu.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Node2D" parent="CanvasLayer" instance=ExtResource( 2 )]
+
+[node name="crt_shader" type="ColorRect" parent="."]
+material = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
