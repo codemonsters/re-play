@@ -1,17 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://minigames/blocky/crt_material.tres" type="Material" id=1]
+[ext_resource path="res://minigames/blocky/assets/crt_material.tres" type="Material" id=1]
 [ext_resource path="res://minigames/blocky/menu.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="CanvasLayer"]
 
-[node name="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Menu" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 1.12245 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = ExtResource( 1 )
-margin_right = 785.0
-margin_bottom = 480.0
+margin_right = 720.0
+margin_bottom = 576.0
+color = Color( 1, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
