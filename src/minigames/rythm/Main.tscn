@@ -48,5 +48,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ColorRect" type="ColorRect" parent="Background"]
+margin_left = 121.0
+margin_top = 113.0
+margin_right = 161.0
+margin_bottom = 153.0
+
 [node name="Timer" type="Timer" parent="."]
 [connection signal="timeout" from="Timer" to="." method="count_down"]
