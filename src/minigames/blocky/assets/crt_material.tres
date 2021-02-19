@@ -6,8 +6,8 @@
 shader = ExtResource( 1 )
 shader_param/screen_size = Vector2( 720, 576 )
 shader_param/show_curvature = true
-shader_param/curvature_x_amount = 6.0
-shader_param/curvature_y_amount = 4.0
+shader_param/curvature_x_amount = 8.0
+shader_param/curvature_y_amount = 6.0
 shader_param/corner_color = Color( 0, 0, 0, 1 )
 shader_param/show_vignette = true
 shader_param/vignette_opacity = 0.25
