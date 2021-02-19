@@ -2,10 +2,50 @@
 
 [node name="Game" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="BackgroundRect" type="ColorRect" parent="."]
 margin_right = 720.0
 margin_bottom = 576.0
 color = Color( 0.2, 1, 0.2, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PaletteRect" type="ColorRect" parent="BackgroundRect"]
+margin_left = 464.0
+margin_top = 7.0
+margin_right = 713.0
+margin_bottom = 569.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StageRect" type="ColorRect" parent="BackgroundRect"]
+margin_left = 7.0
+margin_top = 119.0
+margin_right = 457.0
+margin_bottom = 569.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MessageRect" type="ColorRect" parent="BackgroundRect"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 457.0
+margin_bottom = 56.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeRect" type="ColorRect" parent="BackgroundRect"]
+margin_left = 203.0
+margin_top = 63.0
+margin_right = 274.0
+margin_bottom = 112.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
