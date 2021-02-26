@@ -10,6 +10,7 @@ var bodiesInGrabArea = []
 var bodyGrabbing = Node
 var grabRelativePosition = Vector3()
 var grabbing = false
+var getGrab = [Node, Vector3(), false]
 
 var velocity = Vector3()
 var airVelocity = Vector3()
@@ -34,14 +35,18 @@ func getInput():
 	if Input.is_action_just_pressed("jump"):
 		jump = true
 	if Input.is_action_just_pressed("grab"):
-		[bodyGrabbing, grabRelativePosition, grabbing] = grabBody(bodiesInGrabArea)
+		getGrab = grabBody(bodiesInGrabArea)
+		bodyGrabbing = getGrab[0]
+		grabRelativePosition = getGrab[1]
+		grabbing = getGrab[2]
 	if Input.is_action_just_released("grab"):
+		grabbing = false
 		bodiesInGrabArea = releaseBody(bodiesInGrabArea, bodyGrabbing)
 
 func grabBody(listOfBodies):
 	if listOfBodies.size() > 1:
 		var bodyGrabbing = listOfBodies[1]
-		var grabRelativePosition = bodyGrabbing.get_translation() - self.get_translation() #NO FUNCIONA
+		var grabRelativePosition = bodyGrabbing.global_transform.origin - self.global_transform.origin #NO FUNCIONA
 		return [bodyGrabbing, grabRelativePosition, true]
 	else:
 		return [Node, Vector3(), false]
@@ -76,7 +81,9 @@ func _physics_process(delta):
 		global_transform.origin.y = 1.25
 		global_transform.origin.z = 0
 	if grabbing:
-		pass
+		bodyGrabbing.global_transform.origin = self.global_transform.origin + grabRelativePosition
+		#bodyGrabbing.look_at(get_node("GrabLook").global_transform.origin, Vector3.UP)
+		bodyGrabbing.set_rotation(self.get_rotation())
 
 func _on_GrabArea_body_entered(body):
 	bodiesInGrabArea.append(body)

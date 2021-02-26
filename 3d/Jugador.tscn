@@ -46,5 +46,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody/GrabArea"]
 shape = SubResource( 6 )
+
+[node name="GrabLook" type="Position3D" parent="KinematicBody"]
 [connection signal="body_entered" from="KinematicBody/GrabArea" to="KinematicBody" method="_on_GrabArea_body_entered"]
 [connection signal="body_exited" from="KinematicBody/GrabArea" to="KinematicBody" method="_on_GrabArea_body_exited"]
