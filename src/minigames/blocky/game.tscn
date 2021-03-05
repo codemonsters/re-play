@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=1]
 
 [node name="Game" type="Node2D"]
 
@@ -12,40 +14,105 @@ __meta__ = {
 
 [node name="PaletteRect" type="ColorRect" parent="BackgroundRect"]
 margin_left = 464.0
-margin_top = 7.0
-margin_right = 713.0
-margin_bottom = 569.0
+margin_top = 128.0
+margin_right = 688.0
+margin_bottom = 544.0
 color = Color( 0.156863, 0.156863, 0.156863, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StageRect" type="ColorRect" parent="BackgroundRect"]
-margin_left = 7.0
-margin_top = 119.0
-margin_right = 457.0
-margin_bottom = 569.0
+margin_left = 32.0
+margin_top = 160.0
+margin_right = 416.0
+margin_bottom = 544.0
 color = Color( 0.156863, 0.156863, 0.156863, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="MessageRect" type="ColorRect" parent="BackgroundRect"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 457.0
-margin_bottom = 56.0
+margin_left = 464.0
+margin_top = 32.0
+margin_right = 688.0
+margin_bottom = 120.0
 color = Color( 0.156863, 0.156863, 0.156863, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TimeRect" type="ColorRect" parent="BackgroundRect"]
-margin_left = 203.0
-margin_top = 63.0
-margin_right = 274.0
-margin_bottom = 112.0
+[node name="RichTextLabel" type="RichTextLabel" parent="BackgroundRect/MessageRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -112.0
+margin_top = -35.0
+margin_right = 112.0
+margin_bottom = 35.0
+size_flags_horizontal = 0
+custom_fonts/bold_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.2, 1, 0.2, 1 )
+bbcode_enabled = true
+bbcode_text = "[center][wave amp=50 freq=3] drag blocks to make lines [/wave][/center]"
+text = " drag blocks to make lines "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackgroundRect"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 416.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeLeftRect" type="ColorRect" parent="BackgroundRect/HBoxContainer"]
+margin_bottom = 350.0
 color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinesLeftRect" type="ColorRect" parent="BackgroundRect/HBoxContainer"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 350.0
+color = Color( 0.156863, 0.156863, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinesLeftText" type="RichTextLabel" parent="BackgroundRect/HBoxContainer"]
+margin_left = 8.0
+margin_right = 508.0
+margin_bottom = 350.0
+custom_fonts/normal_font = ExtResource( 1 )
+text = "lines left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeLeftText" type="RichTextLabel" parent="BackgroundRect/HBoxContainer"]
+margin_left = 12.0
+margin_right = 112.0
+margin_bottom = 200.0
+size_flags_vertical = 0
+custom_fonts/normal_font = ExtResource( 1 )
+text = "←Time left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlockExample" type="ColorRect" parent="BackgroundRect"]
+margin_left = 384.0
+margin_top = 187.0
+margin_right = 416.0
+margin_bottom = 219.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
