@@ -1,7 +1,7 @@
 extends KinematicBody
 
 var gravity = Vector3.DOWN * 10
-var baseSpeed = 4 * 5
+var baseSpeed = 4
 var speed = baseSpeed
 var jumpSpeed = 6
 var spin = 0.1
@@ -15,21 +15,23 @@ var velocity = Vector3()
 var airVelocity = Vector3()
 var jump = false
 var standingOnFloor = false
+var collisionVelocity = Vector3()
+var movementVelocity = Vector3()
 
 func getInput():
-	velocity.x = 0
-	velocity.z = 0
+	movementVelocity.x = 0
+	movementVelocity.z = 0
 	if Input.is_action_pressed("w"):
-		velocity += -transform.basis.z * speed
+		movementVelocity += -transform.basis.z * speed
 	if Input.is_action_pressed("s"):
-		velocity += transform.basis.z * speed
+		movementVelocity += transform.basis.z * speed
 	if Input.is_action_pressed("a"):
-		velocity += -transform.basis.x * speed
+		movementVelocity += -transform.basis.x * speed
 	if Input.is_action_pressed("d"):
-		velocity += transform.basis.x * speed
+		movementVelocity += transform.basis.x * speed
 	if not standingOnFloor:
-		velocity.x = airVelocity.x + velocity.x
-		velocity.z = airVelocity.z + velocity.z
+		movementVelocity.x = airVelocity.x + movementVelocity.x
+		movementVelocity.z = airVelocity.z + movementVelocity.z
 	jump = false
 	if Input.is_action_just_pressed("jump"):
 		jump = true
@@ -63,14 +65,23 @@ func _unhandled_input(event):
 
 func _physics_process(delta):
 	standingOnFloor = is_on_floor()
-	velocity += gravity * delta
+	movementVelocity += gravity * delta
+	velocity = movementVelocity + collisionVelocity
+	collisionVelocity.x = lerp(collisionVelocity.x, 0, 1)
+	collisionVelocity.y = lerp(collisionVelocity.y, 0, 1)
+	collisionVelocity.z = lerp(collisionVelocity.z, 0, 1)
 	getInput()
-	velocity = move_and_slide(velocity, Vector3.UP)
-	#velocity = move_and_slide(velocity, Vector3.UP, false, 4, 0.785398, false)
+	#velocity = move_and_slide(velocity, Vector3.UP)
+	velocity = move_and_slide(velocity, Vector3.UP, false, 4, 0.785398, false)
 	#move_and_collide(velocity)
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("bodies"):
+			collision.collider.apply_central_impulse((-collision.normal * 0.5) * collision.collider.get_linear_velocity().length())
+			collisionVelocity = (collision.normal * collision.collider.mass) * collision.collider.get_linear_velocity().length()
 	if jump and standingOnFloor:
-		velocity.y = jumpSpeed
-		airVelocity = velocity
+		movementVelocity.y = jumpSpeed
+		airVelocity = movementVelocity
 	if not standingOnFloor:
 		speed = baseSpeed * 1.25
 	else:
