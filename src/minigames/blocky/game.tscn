@@ -75,15 +75,15 @@ __meta__ = {
 margin_left = 32.0
 margin_top = 32.0
 margin_right = 416.0
-margin_bottom = 152.0
+margin_bottom = 148.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LinesLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
-margin_top = 70.0
+margin_top = 23.0
 margin_right = 93.0
-margin_bottom = 140.0
+margin_bottom = 93.0
 size_flags_horizontal = 3
 size_flags_vertical = 4
 custom_fonts/normal_font = ExtResource( 1 )
@@ -98,7 +98,7 @@ __meta__ = {
 [node name="CenterContainer" type="CenterContainer" parent="Background/HBoxContainer"]
 margin_left = 97.0
 margin_right = 190.0
-margin_bottom = 210.0
+margin_bottom = 116.0
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -106,9 +106,9 @@ __meta__ = {
 
 [node name="LinesLeft" type="ColorRect" parent="Background/HBoxContainer/CenterContainer"]
 margin_left = 21.0
-margin_top = 80.0
+margin_top = 33.0
 margin_right = 71.0
-margin_bottom = 130.0
+margin_bottom = 83.0
 rect_min_size = Vector2( 50, 50 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -120,7 +120,7 @@ __meta__ = {
 [node name="CenterContainer2" type="CenterContainer" parent="Background/HBoxContainer"]
 margin_left = 194.0
 margin_right = 287.0
-margin_bottom = 210.0
+margin_bottom = 116.0
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -128,9 +128,9 @@ __meta__ = {
 
 [node name="TimeLeft" type="ColorRect" parent="Background/HBoxContainer/CenterContainer2"]
 margin_left = 21.0
-margin_top = 80.0
+margin_top = 33.0
 margin_right = 71.0
-margin_bottom = 130.0
+margin_bottom = 83.0
 rect_min_size = Vector2( 50, 50 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -141,13 +141,15 @@ __meta__ = {
 
 [node name="TimeLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
 margin_left = 291.0
+margin_top = 23.0
 margin_right = 384.0
-margin_bottom = 210.0
+margin_bottom = 93.0
 size_flags_horizontal = 3
 size_flags_vertical = 4
 custom_fonts/normal_font = ExtResource( 1 )
-bbcode_text = "[center] Time left [/center] "
-text = "[center] Time left [/center] "
+bbcode_enabled = true
+bbcode_text = "[center]Time left[/center] "
+text = "Time left "
 fit_content_height = true
 __meta__ = {
 "_edit_use_anchors_": false
