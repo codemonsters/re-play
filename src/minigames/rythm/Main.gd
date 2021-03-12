@@ -25,7 +25,10 @@ func count_down():
 		current_countdown -= 1
 
 func play_piano():
-	$AudioStreamPlayer2D.set_stream(load("res://assets/ogg notes/a4.ogg"))
+	var a4 = load("res://assets/ogg notes/a4.ogg")
+	print("Loop: " + str(a4.has_loop()))
+	a4.set_loop(false)
+	$AudioStreamPlayer2D.set_stream(a4)
 	$AudioStreamPlayer2D.play()
 
 func start_game():
