@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/a3.ogg-a872a9ead00b7ce34b963d7c3a590636.oggstr"
+
+[deps]
+
+source_file="res://assets/ogg notes/a3.ogg"
+dest_files=[ "res://.import/a3.ogg-a872a9ead00b7ce34b963d7c3a590636.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
