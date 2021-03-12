@@ -5,6 +5,7 @@ var baseSpeed = 4
 var speed = baseSpeed
 var jumpSpeed = 6
 var spin = 0.1
+var mass = 1
 
 var bodiesInGrabArea = []
 var bodyGrabbing = Node
@@ -44,6 +45,7 @@ func getInput():
 		bodiesInGrabArea = releaseBody(bodiesInGrabArea, bodyGrabbing)
 
 func grabBody(listOfBodies):
+	print(Vector3(1, 1, 0).angle_to(Vector3(-1, 1, 1)))
 	if listOfBodies.size() > 1:
 		var bodyGrabbing = listOfBodies[1]
 		self.get_node("Pos").global_transform.origin = (2 * bodyGrabbing.global_transform.origin) - self.global_transform.origin
@@ -77,8 +79,12 @@ func _physics_process(delta):
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
 		if collision.collider.is_in_group("bodies"):
-			collision.collider.apply_central_impulse((-collision.normal * 0.5) * collision.collider.get_linear_velocity().length())
-			collisionVelocity = (collision.normal * collision.collider.mass) * collision.collider.get_linear_velocity().length()
+			#collision.collider.apply_central_impulse((-collision.normal * 0.5) * collision.collider.get_linear_velocity().length())
+			#var escalar2d = (1 * collision.normal.x + 0 * collision.normal.z)
+			#var collisionAngle = escalar2d / (Vector2(1, 0).length() * Vector2(collision.normal.x, collision.normal.z).length())
+			#print(collisionAngle)
+			collisionVelocity = (collision.collider.mass * collision.collider.get_linear_velocity()) / self.mass
+			#collisionVelocity = (collision.normal * collision.collider.mass) * collision.collider.get_linear_velocity().length()
 	if jump and standingOnFloor:
 		movementVelocity.y = jumpSpeed
 		airVelocity = movementVelocity
