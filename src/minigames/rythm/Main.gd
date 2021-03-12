@@ -24,9 +24,13 @@ func count_down():
 		$Timer.start()
 		current_countdown -= 1
 
+func play_piano():
+	$AudioStreamPlayer2D.set_stream(load("res://assets/ogg notes/a4.ogg"))
+	$AudioStreamPlayer2D.play()
 
 func start_game():
 	$Background/Countdown.hide()
+	play_piano()
 	game_started = true
 	
 func _process(delta):
