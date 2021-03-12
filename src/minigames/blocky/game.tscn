@@ -15,7 +15,7 @@ script = SubResource( 1 )
 [node name="Background" type="ColorRect" parent="."]
 margin_right = 720.0
 margin_bottom = 576.0
-color = Color( 0.2, 1, 0.2, 1 )
+color = Color( 0.027451, 0.937255, 0.360784, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -25,7 +25,7 @@ margin_left = 464.0
 margin_top = 128.0
 margin_right = 688.0
 margin_bottom = 544.0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -35,8 +35,144 @@ margin_left = 32.0
 margin_top = 160.0
 margin_right = 416.0
 margin_bottom = 544.0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 416.0
+margin_bottom = 148.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinesLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
+margin_top = 23.0
+margin_right = 74.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.113725, 0.160784, 0.219608, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]LINES
+LEFT[/center]"
+text = "LINES
+LEFT"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="Background/HBoxContainer"]
+margin_left = 78.0
+margin_right = 190.0
+margin_bottom = 116.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" type="ColorRect" parent="Background/HBoxContainer/CenterContainer"]
+margin_left = 31.0
+margin_top = 33.0
+margin_right = 81.0
+margin_bottom = 83.0
+rect_min_size = Vector2( 50, 50 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinesLeft" type="RichTextLabel" parent="Background/HBoxContainer/CenterContainer/Box"]
+anchor_left = 0.51
+anchor_top = 0.51
+anchor_right = 0.51
+anchor_bottom = 0.51
+margin_left = -12.5
+margin_top = -17.5
+margin_right = 12.5
+margin_bottom = 17.5
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.027451, 0.937255, 0.360784, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]0[/center]"
+text = "0"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CenterContainer2" type="CenterContainer" parent="Background/HBoxContainer"]
+margin_left = 194.0
+margin_right = 305.0
+margin_bottom = 116.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" type="ColorRect" parent="Background/HBoxContainer/CenterContainer2"]
+margin_left = 30.0
+margin_top = 33.0
+margin_right = 80.0
+margin_bottom = 83.0
+rect_min_size = Vector2( 50, 50 )
+rect_pivot_offset = Vector2( 49, 64 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinesLeft2" type="RichTextLabel" parent="Background/HBoxContainer/CenterContainer2/Box"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -17.0
+margin_right = 26.0
+margin_bottom = 18.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.027451, 0.937255, 0.360784, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]10[/center]"
+text = "10"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
+margin_left = 309.0
+margin_top = 23.0
+margin_right = 384.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.113725, 0.160784, 0.219608, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]TIME
+LEFT[/center]"
+text = "TIME
+LEFT"
+fit_content_height = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -46,7 +182,7 @@ margin_left = 464.0
 margin_top = 32.0
 margin_right = 688.0
 margin_bottom = 120.0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -63,7 +199,7 @@ margin_bottom = 35.0
 size_flags_horizontal = 0
 custom_fonts/bold_font = ExtResource( 1 )
 custom_fonts/normal_font = ExtResource( 1 )
-custom_colors/default_color = Color( 0.2, 1, 0.2, 1 )
+custom_colors/default_color = Color( 0.027451, 0.937255, 0.360784, 1 )
 bbcode_enabled = true
 bbcode_text = "[center][wave amp=50 freq=3] DRAG BLOCKS TO MAKE LINES [/wave][/center]"
 text = " DRAG BLOCKS TO MAKE LINES "
@@ -71,91 +207,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Background"]
-margin_left = 32.0
-margin_top = 32.0
-margin_right = 416.0
-margin_bottom = 148.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LinesLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
-margin_top = 23.0
-margin_right = 93.0
-margin_bottom = 93.0
-size_flags_horizontal = 3
-size_flags_vertical = 4
-custom_fonts/normal_font = ExtResource( 1 )
-bbcode_enabled = true
-bbcode_text = "[center]lines left [/center]"
-text = "lines left "
-fit_content_height = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="CenterContainer" type="CenterContainer" parent="Background/HBoxContainer"]
-margin_left = 97.0
-margin_right = 190.0
-margin_bottom = 116.0
-size_flags_horizontal = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LinesLeft" type="ColorRect" parent="Background/HBoxContainer/CenterContainer"]
-margin_left = 21.0
-margin_top = 33.0
-margin_right = 71.0
-margin_bottom = 83.0
-rect_min_size = Vector2( 50, 50 )
-size_flags_horizontal = 0
-size_flags_vertical = 0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="CenterContainer2" type="CenterContainer" parent="Background/HBoxContainer"]
-margin_left = 194.0
-margin_right = 287.0
-margin_bottom = 116.0
-size_flags_horizontal = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TimeLeft" type="ColorRect" parent="Background/HBoxContainer/CenterContainer2"]
-margin_left = 21.0
-margin_top = 33.0
-margin_right = 71.0
-margin_bottom = 83.0
-rect_min_size = Vector2( 50, 50 )
-size_flags_horizontal = 0
-size_flags_vertical = 0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TimeLeftText" type="RichTextLabel" parent="Background/HBoxContainer"]
-margin_left = 291.0
-margin_top = 23.0
-margin_right = 384.0
-margin_bottom = 93.0
-size_flags_horizontal = 3
-size_flags_vertical = 4
-custom_fonts/normal_font = ExtResource( 1 )
-bbcode_enabled = true
-bbcode_text = "[center]Time left[/center] "
-text = "Time left "
-fit_content_height = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="BlockExample" type="ColorRect" parent="Background"]
+visible = false
 margin_left = 32.0
 margin_top = 160.0
 margin_right = 64.0

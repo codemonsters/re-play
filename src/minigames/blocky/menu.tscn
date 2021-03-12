@@ -10,7 +10,7 @@ script = ExtResource( 3 )
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 720.0
 margin_bottom = 576.0
-color = Color( 0.156863, 0.156863, 0.156863, 1 )
+color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -20,7 +20,7 @@ margin_top = 100.0
 margin_right = 720.0
 margin_bottom = 200.0
 custom_fonts/font = ExtResource( 1 )
-custom_colors/font_color = Color( 0.2, 1, 0.2, 1 )
+custom_colors/font_color = Color( 0.027451, 0.937255, 0.360784, 1 )
 text = "BLOCKY"
 align = 1
 valign = 1
@@ -33,7 +33,7 @@ margin_top = 200.217
 margin_right = 720.0
 margin_bottom = 234.217
 custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 0.2, 1, 0.2, 1 )
+custom_colors/font_color = Color( 0.027451, 0.937255, 0.360784, 1 )
 text = "- click or tap to start -"
 align = 1
 __meta__ = {
