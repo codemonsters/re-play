@@ -17,14 +17,15 @@
             1,5,1
         ]
     ],
-    "files": {
-        "1": "a3.ogg",
-        "2": "b3.ogg",
-        "3": "d-4.ogg",
-        "4": "d4.ogg",
-        "5": "e4.ogg",
-        "6": "g-4.ogg",
-        "7": "a-4.ogg",
-        "8": "a4.ogg"
-    }
+    "files": [
+        "a3.ogg",
+        "a3.ogg",
+        "b3.ogg",
+        "d-4.ogg",
+        "d4.ogg",
+        "e4.ogg",
+        "g-4.ogg",
+        "a-4.ogg",
+        "a4.ogg"
+    ]
 }
