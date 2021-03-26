@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=1]
+[ext_resource path="res://minigames/blocky/block.tscn" type="PackedScene" id=2]
 [ext_resource path="res://minigames/blocky/StageRect.gd" type="Script" id=3]
 
 [sub_resource type="GDScript" id=1]
@@ -40,6 +41,16 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="EmptyBlocks" type="Node2D" parent="Background/Stage"]
+
+[node name="Blocks" type="Node2D" parent="Background/Stage"]
+
+[node name="Block" parent="Background/Stage/Blocks" instance=ExtResource( 2 )]
+position = Vector2( 368, 368 )
+
+[node name="Block2" parent="Background/Stage/Blocks" instance=ExtResource( 2 )]
+position = Vector2( 16, 16 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Background"]
 margin_left = 32.0

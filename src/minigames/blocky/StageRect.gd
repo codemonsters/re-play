@@ -30,22 +30,23 @@ func _ready():
 			var y = row * height / ROWS + height / (2 * ROWS)
 			var bC = blockContainer.instance()
 			bC.set_position(Vector2(x, y))
-			add_child(bC)
+			$EmptyBlocks.add_child(bC)
 	
 
 func _draw():
+	pass
 	# draw horizontal matrix lines
-	var width = self.get_size().x
-	var height = self.get_size().y
+#	var width = self.get_size().x
+#	var height = self.get_size().y
 	
-	for y in range(11):
-		draw_line(Vector2(0, (y + 1) * height / ROWS), 
-			Vector2(width - 1, (y + 1) * height / ROWS), 
-			line_color, 1, true)
-		
-	# draw horizontal matrix lines
-	for x in range(11):
-		draw_line(Vector2((x + 1) * width / COLS, 0), 
-			Vector2((x + 1) * width / COLS, height - 1), 
-			line_color, 1, true)
-	
+#	for y in range(11):
+#		draw_line(Vector2(0, (y + 1) * height / ROWS), 
+#			Vector2(width - 1, (y + 1) * height / ROWS), 
+#			line_color, 1, true)
+#
+#	# draw horizontal matrix lines
+#	for x in range(11):
+#		draw_line(Vector2((x + 1) * width / COLS, 0), 
+#			Vector2((x + 1) * width / COLS, height - 1), 
+#			line_color, 1, true)
+#
