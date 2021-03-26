@@ -69,16 +69,21 @@ func _physics_process(delta):
 	standingOnFloor = is_on_floor()
 	movementVelocity += gravity * delta
 	velocity = movementVelocity + collisionVelocity
-	collisionVelocity.x = lerp(collisionVelocity.x, 0, 1)
-	collisionVelocity.y = lerp(collisionVelocity.y, 0, 1)
-	collisionVelocity.z = lerp(collisionVelocity.z, 0, 1)
+	collisionVelocity.x = lerp(collisionVelocity.x, 0, 0.1)
+	collisionVelocity.y = lerp(collisionVelocity.y, 0, 0.1)
+	collisionVelocity.z = lerp(collisionVelocity.z, 0, 0.1)
 	getInput()
 	#velocity = move_and_slide(velocity, Vector3.UP)
 	velocity = move_and_slide(velocity, Vector3.UP, false, 4, 0.785398, false)
 	#move_and_collide(velocity)
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
-		if collision.collider.is_in_group("bodies"):
+		if collision.collider.is_in_group("heavy"):
+			pass
+			#collisionVelocity = collision.collider.get_constant_linear_velocity() * (collision.collider.mass / self.mass)
+		elif collision.collider.is_in_group("medium"):
+			pass
+		elif collision.collider.is_in_group("light"):
 			#collision.collider.apply_central_impulse((-collision.normal * 0.5) * collision.collider.get_linear_velocity().length())
 			#var escalar2d = (1 * collision.normal.x + 0 * collision.normal.z)
 			#var collisionAngle = escalar2d / (Vector2(1, 0).length() * Vector2(collision.normal.x, collision.normal.z).length())

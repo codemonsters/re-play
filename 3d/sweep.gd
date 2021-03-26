@@ -1,6 +1,8 @@
 extends RigidBody
 
 var time = 0
+var colliding = false
+var collider = Node
 
 func _physics_process(delta):
 	var velocity = self.get_linear_velocity()
