@@ -1,6 +1,6 @@
 extends StaticBody
 
-var mass = 5
+var mass = 1000
 var time = 0
 var collider = Node
 var colliding = false

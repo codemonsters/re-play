@@ -19,6 +19,10 @@ config/name="3d"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/fps/force_fps=60
+
 [input]
 
 w={
