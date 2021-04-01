@@ -37,8 +37,8 @@ func play_piano(note):
 	print(notes["files"][note]) # DEBUG
 	var note_sound = load("res://assets/ogg notes/" + notes["files"][note])
 	note_sound.set_loop(false)
-	$AudioStreamPlayer2D.set_stream(note_sound)
-	$AudioStreamPlayer2D.play()
+	$AudioStreamPlayer.set_stream(note_sound)
+	$AudioStreamPlayer.play()
 
 func start_game():
 	$Background/Countdown.hide()
