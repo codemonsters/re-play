@@ -10,7 +10,7 @@ func _ready():
 	# initialize stage matrix
 	for x in range(ROWS):
 		matrix.append([])
-		for y in range(COLS):
+		for _y in range(COLS):
 			matrix[x].append(false)
 	for x in range(5):
 		matrix[0][x] = true 

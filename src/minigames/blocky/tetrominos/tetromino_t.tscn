@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://minigames/blocky/block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://minigames/blocky/tetrominos/tetromino.gd" type="Script" id=2]
 
-[node name="TetrominoI" type="Node2D"]
+[node name="TetrominoT" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="Block1" parent="." instance=ExtResource( 1 )]
 position = Vector2( 0, -16 )

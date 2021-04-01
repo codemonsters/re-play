@@ -3,15 +3,10 @@
 [ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=1]
 [ext_resource path="res://minigames/blocky/block.tscn" type="PackedScene" id=2]
 [ext_resource path="res://minigames/blocky/StageRect.gd" type="Script" id=3]
-
-[sub_resource type="GDScript" id=1]
-script/source = "extends Node2D
-
-
-"
+[ext_resource path="res://minigames/blocky/game.gd" type="Script" id=4]
 
 [node name="Game" type="Node2D"]
-script = SubResource( 1 )
+script = ExtResource( 4 )
 
 [node name="Background" type="ColorRect" parent="."]
 margin_right = 720.0
