@@ -8,7 +8,7 @@ La idea que se está imponiendo es un juego similar a fall guys (carrera 3D) per
 
 Tareas pendientes antes de empezar a programar:
 * ~~Nombre del juego~~
-* Detallar más la mecánica de juego
+* ~~Detallar más la mecánica de juego~~
 * Minijuegos para poner en las máquinas (Véase: [Issue #2](https://github.com/codemonsters/re-play/issues/2))
 * Modo online y offline (detallar modo funcionamiento, hacer pruebas)
 * Pruebas de animación esqueletal de un modelo 3D 
