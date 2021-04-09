@@ -30,3 +30,11 @@ script = ExtResource( 1 )
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, 0, -3, 0 )
 mesh = SubResource( 2 )
 material/0 = null
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.24574 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.001
+autostart = true
+[connection signal="timeout" from="Timer" to="Cabeza" method="_on_Timer_timeout"]

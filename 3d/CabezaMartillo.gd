@@ -10,26 +10,31 @@ var y
 var z
 var xc
 var yc
+var radio
+var alpha
+var velocity
 
 func _ready():
-	x = 0
-	y = get_parent().get_node("Agarre").global_transform.origin.y - 3
+	alpha = 0
+	radio = 3
+	velocity = 10
 	z = get_parent().get_node("Agarre").global_transform.origin.z
 	xc = get_parent().get_node("Agarre").global_transform.origin.x
-	yc = get_parent().get_node("Agarre").global_transform.origin.y
+	yc = get_parent().get_node("Agarre").global_transform.origin.y + radio
 
 func _process(delta):
-	time += delta
-	#angularVelocity = Vector2(sin(time) * 5, sin(time) * 5)
-	#angulo = sin(time) * 10 #angularVelocity.length()
-	#linearVelocity = Vector2(cos(angulo), sin(angulo))
-	#print(angulo)
-	#translate(Vector3(linearVelocity.x, linearVelocity.y, 0))
-	# posicionAngular = amplitud * sen(velocidadAngular * 180)
-	
-	# (x - x_centro)^2 + (y - y_centro)^2 = radio^2
-	# y = raiz(radio^2 - x^2)
-	x += delta
-	var a = sqrt(9 - pow(x - xc, 2))
-	y = a + yc
-	self.global_transform.origin = Vector3(x, y, z)
+	print(alpha)
+	x = xc + (radio * cos(deg2rad(alpha)))
+	if alpha > 180:
+		y = yc + (radio * sin(deg2rad(alpha)))
+	else:
+		y = yc - (radio * sin(deg2rad(alpha)))
+	self.global_transform.origin.x = x
+	self.global_transform.origin.y = y
+	self.global_transform.origin.z = z
+
+
+func _on_Timer_timeout():
+	alpha += 1
+	if alpha >= 360:
+		alpha = 0
