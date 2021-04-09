@@ -90,6 +90,10 @@ func time_tick():
 		count_down()
 	else:
 		play_drum()
+		handle_notes()
+
+func handle_notes():
+	pass
 
 func prepare_queues():
 	for chord_num in range(5):
@@ -114,6 +118,4 @@ func prepare_queues():
 					if !_notes.has(_note):
 						_notes.append(_note)
 				notes_queue.append([time, _notes])
-
-	print(notes_queue)
 
