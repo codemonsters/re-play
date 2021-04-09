@@ -1,8 +1,6 @@
-Godot Engine v3.2.3.stable.official - https://godotengine.org
+Godot Engine v3.2.3.stable.custom_build - https://godotengine.org
 OpenGL ES 3.0 Renderer: Mesa DRI Intel(R) HD Graphics 4400 (HSW GT2)
  
-Project is missing: /home/codemonsters/Desktop/instancing/project.godot
+Project is missing: /home/codemonsters/Desktop/super_pong/project.godot
 **ERROR**: Condition "default_certs != __null" is true.
    At: modules/mbedtls/crypto_mbedtls.cpp:201:load_default_certificates() - Condition "default_certs != __null" is true.
-**ERROR**: Error opening file '/home/codemonsters/Desktop/godottest/icon.png'.
-   At: core/io/image_loader.cpp:56:load_image() - Error opening file '/home/codemonsters/Desktop/godottest/icon.png'.

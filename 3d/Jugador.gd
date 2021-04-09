@@ -67,7 +67,8 @@ func _unhandled_input(event):
 
 func _physics_process(delta):
 	standingOnFloor = is_on_floor()
-	movementVelocity += gravity * delta
+	if not standingOnFloor:
+		movementVelocity += gravity * delta
 	velocity = movementVelocity + collisionVelocity
 	collisionVelocity.x = lerp(collisionVelocity.x, 0, 0.1)
 	collisionVelocity.y = lerp(collisionVelocity.y, 0, 0.1)
