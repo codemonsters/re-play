@@ -1,5 +1,8 @@
 extends Node2D
 
+var sourcePosition
+var destinationPosition
+
 
 func get_size():
 	var x_max = 0
@@ -21,3 +24,11 @@ func get_size():
 	var height = (y_max - y_min) - $Block1.get_size().y
 	
 	return Vector2(width, height)
+	
+
+func _process(delta):
+	var shift_vector = (destinationPosition - position).normalized() * delta * 800
+	if shift_vector.length() > (destinationPosition - position).length():
+		position = destinationPosition
+	else:
+		position += shift_vector

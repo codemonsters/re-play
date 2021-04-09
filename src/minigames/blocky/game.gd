@@ -7,12 +7,14 @@ onready var tetromino_square = preload("res://minigames/blocky/tetrominos/tetrom
 onready var tetromino_t = preload("res://minigames/blocky/tetrominos/tetromino_t.tscn")
 
 func _ready():
-	var tetromino = new_tetromino()
-	$Background/Palette.add_child(tetromino)
+	$Background/Palette.add_child(new_tetromino(Vector2(112, -64), Vector2(112, ($Background/Palette.rect_size.y / 4) * 3))) # TODO: Expresar posiciones origen y destino en función del tamaño del nodo Palette
+	$Background/Palette.add_child(new_tetromino(Vector2(112, -192), Vector2(112, $Background/Palette.rect_size.y / 4))) # TODO: Expresar posiciones origen y destino en función del tamaño del nodo Palette
 
-func new_tetromino():
+
+func new_tetromino(sourcePosition, destinationPosition):
 	var random_tetromino = randi() % 5
 	var tetromino
+	
 	match random_tetromino:
 		0:
 			tetromino = tetromino_l.instance()
@@ -25,7 +27,10 @@ func new_tetromino():
 		4:
 			tetromino = tetromino_t.instance()
 	
-	
-	tetromino.set_position(Vector2($Background/Palette.get_size().x / 2, tetromino.get_size().y / 2))
 	tetromino.set_rotation_degrees((randi() % 4) * 90)
+	tetromino.set_position(sourcePosition)
+	
+	tetromino.sourcePosition = sourcePosition
+	tetromino.destinationPosition = destinationPosition
+	
 	return tetromino
