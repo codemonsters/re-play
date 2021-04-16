@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/monofonto.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Main.gd" type="Script" id=2]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -57,4 +58,5 @@ margin_bottom = 153.0
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 3 )
 [connection signal="timeout" from="Timer" to="." method="time_tick"]
