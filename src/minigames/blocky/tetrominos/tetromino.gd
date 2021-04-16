@@ -4,6 +4,14 @@ var sourcePosition
 var destinationPosition
 
 
+func _ready():
+	connect("input_event", self, "_on_input_event")
+
+
+func _input(event):
+	#print("event")
+	pass
+
 func get_size():
 	var x_max = 0
 	var x_min = 0
@@ -32,3 +40,11 @@ func _process(delta):
 		position = destinationPosition
 	else:
 		position += shift_vector
+
+
+func _on_input_event():
+	print("TOCADO: ")
+
+
+func _on_Tetromino_input_event(viewport, event, shape_idx):
+	print("tocado2")
