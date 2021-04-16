@@ -95,7 +95,7 @@ func time_tick():
 func handle_notes():
 	if left == 0:
 		if counter >= len(notes_queue):
-			print("ACABOOOO")
+			print("MINIJUEGO FINALIZADO")
 
 		var _queue_element = notes_queue[counter]
 		counter += 1

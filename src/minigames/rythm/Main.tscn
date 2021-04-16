@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/monofonto.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Main.gd" type="Script" id=2]
 [ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=3]
+[ext_resource path="res://addons/mixing-desk/music/mixing_desk_music.gd" type="Script" id=4]
+[ext_resource path="res://addons/mixing-desk/music/song.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -59,4 +61,14 @@ margin_bottom = 153.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 3 )
+
+[node name="MixingDeskMusic" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="Piano" type="Node" parent="MixingDeskMusic"]
+script = ExtResource( 5 )
+
+[node name="Kick" type="AudioStreamPlayer" parent="MixingDeskMusic/Piano"]
+
+[node name="Snare" type="AudioStreamPlayer" parent="MixingDeskMusic/Piano"]
 [connection signal="timeout" from="Timer" to="." method="time_tick"]
