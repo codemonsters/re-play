@@ -26,6 +26,10 @@ window/size/height=960
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "mixing-desk" )
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
