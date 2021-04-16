@@ -4,8 +4,11 @@ var gravity = Vector3.DOWN * 10
 var baseSpeed = 4
 var speed = baseSpeed
 var jumpSpeed = 6
-var spin = 0.1
+var baseSpin = 0.005
+var spin = baseSpin
+var spinning = false
 var mass = 1
+var alpha = 0
 
 var bodiesInGrabArea = []
 var bodyGrabbing = Node
@@ -27,9 +30,28 @@ func getInput():
 	if Input.is_action_pressed("s"):
 		movementVelocity += transform.basis.z * speed
 	if Input.is_action_pressed("a"):
-		movementVelocity += -transform.basis.x * speed
+		spinning = true
+		rotate_y(lerp(0, spin, 4))
 	if Input.is_action_pressed("d"):
-		movementVelocity += transform.basis.x * speed
+		spinning = true
+		rotate_y(-lerp(0, spin, 4))
+	if Input.is_action_just_released("a") or Input.is_action_just_released("d"):
+		spin = baseSpin
+		spinning = false
+	if Input.is_action_pressed("ctrl"):
+		alpha += 0.01
+		if alpha >= 1.6:
+			alpha = 1.6
+		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+	else:
+		alpha -= 0.01
+		if alpha <= 0:
+			alpha = 0
+		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
 	if not standingOnFloor:
 		movementVelocity.x = airVelocity.x + movementVelocity.x
 		movementVelocity.z = airVelocity.z + movementVelocity.z
@@ -60,12 +82,28 @@ func releaseBody(listOfBodies, bodyGrabbing):
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
-		if event.relative.x > 0:
-			rotate_y(-lerp(0, spin, event.relative.x/10))
-		elif event.relative.x < 0:
-			rotate_y(-lerp(0, spin, event.relative.x/10))
+		if event.relative.y > 0:
+			alpha += event.relative.y / 100
+			if alpha >= 1.6:
+				alpha = 1.6
+			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+			#get_node("Camera").rotate_x(-alpha)
+			print(alpha)
+		elif event.relative.y < 0:
+			alpha += event.relative.y / 100
+			if alpha >= -1.6:
+				alpha = -1.6
+			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+			#get_node("Camera").rotate_x(-alpha)
+			print(alpha)
 
 func _physics_process(delta):
+	if spinning and spin < 0.02:
+		spin += delta / 100
 	standingOnFloor = is_on_floor()
 	if not standingOnFloor:
 		movementVelocity += gravity * delta

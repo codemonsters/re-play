@@ -3,9 +3,9 @@ extends Camera
 var follow
 
 func _ready():
-	follow = get_parent().get_node("Jugador").get_node("KinematicBody")
+	follow = get_parent().get_node("KinematicBody")
 
 func _process(delta):
-	self.global_transform.origin.x = follow.global_transform.origin.x
-	self.global_transform.origin.y = follow.global_transform.origin.y + 2.5
-	self.global_transform.origin.z = follow.global_transform.origin.z + 5
+	global_transform.origin.x = follow.global_transform.origin.x
+	global_transform.origin.y = follow.global_transform.origin.y + 2.5 + sin(follow.alpha) * 5
+	global_transform.origin.z = follow.global_transform.origin.z + cos(follow.alpha) * 5

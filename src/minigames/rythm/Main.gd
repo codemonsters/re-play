@@ -9,7 +9,7 @@ var left = 0 # Cuantos ticks quedan antes pasar al siguiente elemento de la list
 
 var notes_queue = [] # Array de notas a tocar durante la partida
 # El formato del array anterior es el siguiente:
-#  - Cada elemento es un array (dos elementos)
+#  - Hay dos elementos
 #  - El primero de estos elementos indica el tiempo en ticks que deben durar las notas
 #  - El segundo es un array con los números de las notas a reproducir (números en base a la posición en el array "files" en tonos.json)
 
@@ -57,7 +57,7 @@ func count_down():
 	else:
 		$Timer.start()
 		current_countdown -= 1
- 
+
 func play_piano(note):
 	play_sound("ogg notes/" + notes["files"][note])
 
@@ -89,14 +89,29 @@ func time_tick():
 	if current_countdown != 5:
 		count_down()
 	else:
-		play_drum()
 		handle_notes()
+		play_drum()
 
 func handle_notes():
-	pass
+	if left == 0:
+		if counter >= len(notes_queue):
+			print("MINIJUEGO FINALIZADO")
+
+		var _queue_element = notes_queue[counter]
+		counter += 1
+
+		left = _queue_element[0]
+		var _notes = _queue_element[1]
+
+		for x in _notes:
+			play_piano(x)
+	else:
+		left -= 1
+
+		
 
 func prepare_queues():
-	for chord_num in range(5):
+	for chord_num in range(10):
 		randomize()
 		var chord = notes["chords"][randi() % notes["chords"].size()]
 		for beat_num in range(2):
