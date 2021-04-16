@@ -1,0 +1,67 @@
+# Blender MTL File: 'CodeMonsterSummer.blend'
+# Material Count: 6
+
+newmtl Bañador
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.158961 0.012983 0.318547
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 4.500000 -s 3.000000 3.000000 3.000000 D:\\Documentos\\###Blender###\\CodeMonster\\TexturesCom_Fabric_Cotton_1K_normal.tif
+map_Kd D:\\Documentos\\###Blender###\\CodeMonster\\rect1985.png
+map_Ns -s 3.000000 3.000000 3.000000 D:\\Documentos\\###Blender###\\CodeMonster\\TexturesCom_Fabric_Cotton_1K_roughness.tif
+
+newmtl Bañador2
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.072272 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 4.500000 -s 3.000000 3.000000 3.000000 D:\\Documentos\\###Blender###\\CodeMonster\\TexturesCom_Fabric_Cotton_1K_normal.tif
+map_Ns -s 3.000000 3.000000 3.000000 D:\\Documentos\\###Blender###\\CodeMonster\\TexturesCom_Fabric_Cotton_1K_roughness.tif
+
+newmtl Cristales
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Cuerpo
+Ns 143.999983
+Ka 1.000000 1.000000 1.000000
+Kd 0.278894 0.462077 0.024158
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.050000
+d 1.000000
+illum 2
+
+newmtl Extremidades
+Ns 143.999983
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Glasses
+Ns 272.250012
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

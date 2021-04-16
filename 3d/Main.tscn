@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://RigidBody.gd" type="Script" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Bloque.gd" type="Script" id=4]
 [ext_resource path="res://bala.gd" type="Script" id=5]
 [ext_resource path="res://Martillo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Camera.gd" type="Script" id=7]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -180,8 +179,5 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.822983 )
 shape = SubResource( 19 )
-
-[node name="Camera" type="Camera" parent="."]
-script = ExtResource( 7 )
 [connection signal="body_entered" from="Bloque/Area" to="Bloque" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Bloque/Area" to="Bloque" method="_on_Area_body_exited"]
