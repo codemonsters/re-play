@@ -21,5 +21,5 @@ position = Vector2( -32, -16 )
 [node name="Block4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 32, -16 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="BoundingBox" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
