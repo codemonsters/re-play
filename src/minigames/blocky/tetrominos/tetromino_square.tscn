@@ -9,17 +9,17 @@ extents = Vector2( 32, 32 )
 [node name="TetrominoSquare" type="Area2D"]
 script = ExtResource( 2 )
 
-[node name="Block1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16, -16 )
-
-[node name="Block2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16, 16 )
-
-[node name="Block3" parent="." instance=ExtResource( 1 )]
-position = Vector2( -16, -16 )
-
-[node name="Block4" parent="." instance=ExtResource( 1 )]
-position = Vector2( -16, 16 )
-
 [node name="BoundingBox" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="Block1" parent="BoundingBox" instance=ExtResource( 1 )]
+position = Vector2( 16, -16 )
+
+[node name="Block2" parent="BoundingBox" instance=ExtResource( 1 )]
+position = Vector2( 16, 16 )
+
+[node name="Block3" parent="BoundingBox" instance=ExtResource( 1 )]
+position = Vector2( -16, -16 )
+
+[node name="Block4" parent="BoundingBox" instance=ExtResource( 1 )]
+position = Vector2( -16, 16 )
