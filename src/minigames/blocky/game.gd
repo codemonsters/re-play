@@ -7,6 +7,7 @@ onready var tetromino_square = preload("res://minigames/blocky/tetrominos/tetrom
 onready var tetromino_t = preload("res://minigames/blocky/tetrominos/tetromino_t.tscn")
 var available_tetrominos = [] # List of tetrominos available in the palette (right side of the screen)
 
+
 func _ready():
 	fetch_new_tetrominos() 
 
@@ -22,6 +23,7 @@ func fetch_new_tetrominos():
 func new_tetromino(sourcePosition, destinationPosition):
 	var random_tetromino = randi() % 5
 	var tetromino
+	
 	
 	match random_tetromino:
 		0:

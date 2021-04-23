@@ -1,8 +1,10 @@
 extends CanvasLayer
 
+
 func _ready():
 	randomize()
 	var _ignored = $Screen/Menu.connect("blocky_start_game", self, "on_start_game")
+
 
 func on_start_game():
 	var game_scene = preload("res://minigames/blocky/game.tscn")

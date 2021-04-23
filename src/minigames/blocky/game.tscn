@@ -212,13 +212,3 @@ text = " DRAG BLOCKS TO MAKE LINES "
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="BlockExample" type="ColorRect" parent="Background"]
-visible = false
-margin_left = 32.0
-margin_top = 160.0
-margin_right = 64.0
-margin_bottom = 192.0
-__meta__ = {
-"_edit_use_anchors_": false
-}

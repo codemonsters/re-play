@@ -43,4 +43,5 @@ __meta__ = {
 [node name="StartBlinkTimer" type="Timer" parent="Start"]
 wait_time = 0.5
 autostart = true
+[connection signal="mouse_entered" from="Title" to="." method="_on_Title_mouse_entered"]
 [connection signal="timeout" from="Start/StartBlinkTimer" to="." method="_on_StartBlinkTimer_timeout"]
