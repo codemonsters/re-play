@@ -1,6 +1,8 @@
 
 # Godot-specific ignores
 .import/
+**/.import/
+
 export.cfg
 export_presets.cfg
 
@@ -11,3 +13,5 @@ data_*/
 # Other ignores
 .vscode
 .DS_Store
+**/.vscode
+**/.DS_Store
