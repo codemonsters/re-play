@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/win.mp3-d9647225b78bd1d5acd53b28b1d440b5.mp3str"
+
+[deps]
+
+source_file="res://minigames/blocky/assets/win.mp3"
+dest_files=[ "res://.import/win.mp3-d9647225b78bd1d5acd53b28b1d440b5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
