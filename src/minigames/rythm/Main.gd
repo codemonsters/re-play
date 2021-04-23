@@ -59,7 +59,7 @@ func count_down():
 		current_countdown -= 1
 
 func play_piano(note):
-	play_sound("ogg notes/" + notes["files"][note])
+	play_sound_mk2("ogg notes/" + notes["files"][note])
 
 func play_drum():
 	if next_drum:
@@ -76,6 +76,12 @@ func play_sound(sound_name):
 	$AudioStreamPlayer.set_stream(sound)
 	$AudioStreamPlayer.play()
 
+func play_sound_mk2(sound_name):
+	var sound = load(assets_dir + sound_name)
+	sound.set_loop(false)
+	$AudioStreamPlayer2.set_stream(sound)
+	$AudioStreamPlayer2.play()
+
 func start_game():
 	$Background/Countdown.hide()
 	game_started = true
@@ -89,8 +95,8 @@ func time_tick():
 	if current_countdown != 5:
 		count_down()
 	else:
-		handle_notes()
 		play_drum()
+		handle_notes()
 
 func handle_notes():
 	if left == 0:
