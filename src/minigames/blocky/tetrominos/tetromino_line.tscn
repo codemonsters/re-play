@@ -35,4 +35,6 @@ position = Vector2( 0, 16 )
 
 [node name="Block4" parent="Blocks" instance=ExtResource( 1 )]
 position = Vector2( 0, 48 )
-[connection signal="mouse_entered" from="CollisionShape2D/BoundingBox" to="." method="_on_ColorRect_mouse_entered"]
+
+[connection signal="mouse_entered" from="CollisionShape2D/BoundingBox" to="." method="_on_BoundingBox_mouse_entered"]
+[connection signal="mouse_exited" from="CollisionShape2D/BoundingBox" to="." method="_on_BoundingBox_mouse_exited"]
