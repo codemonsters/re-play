@@ -114,9 +114,29 @@ func handle_notes():
 	else:
 		left -= 1
 
-		
-
 func prepare_queues():
+	var previous_note = 2
+	for chord_num in range(10):
+		randomize()
+		var chord = notes["chords"][randi() % notes["chords"].size()]
+		for beat_num in range(2):
+			randomize()
+			var various_notes = true if randi() % 2 else false
+			var time = 2 if various_notes else 1
+			for note_num in range(time):
+				randomize()
+				var _notes = []
+				for test in range(10):	
+					var _note = chord[randi() % chord.size()]
+					if abs(_note - previous_note) <= 2 and _note != previous_note:
+						_notes.append(_note)
+						break
+				notes_queue.append([time, _notes])
+				previous_note = _notes[0]
+	print(notes_queue)
+
+# FIXME: EN LA VERSION FINAL QUITAR LO SIGUIENTE. DE MOMENTO LO DEJAMOS POR SI ACASO PASA ALGO... 😜
+func prepare_queues_old():
 	for chord_num in range(10):
 		randomize()
 		var chord = notes["chords"][randi() % notes["chords"].size()]
@@ -139,4 +159,3 @@ func prepare_queues():
 					if !_notes.has(_note):
 						_notes.append(_note)
 				notes_queue.append([time, _notes])
-
