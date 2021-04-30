@@ -49,4 +49,4 @@ func _draw():
 #		draw_line(Vector2((x + 1) * width / COLS, 0), 
 #			Vector2((x + 1) * width / COLS, height - 1), 
 #			line_color, 1, true)
-#
+# TODO: Ni idea de qué era esto. Habría que revisarlo y borrarlo si no es necesario ·~·

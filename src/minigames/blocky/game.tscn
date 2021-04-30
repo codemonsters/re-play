@@ -212,3 +212,5 @@ text = " DRAG BLOCKS TO MAKE LINES "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ActiveTetromino" type="Node2D" parent="."]

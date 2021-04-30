@@ -27,18 +27,27 @@ func _on_BoundingBox_mouse_entered():
 
 func _on_BoundingBox_mouse_exited():
 	mouse_inside = false
+	
+
+func _input(event):
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and not event.pressed:
+		dragging = false
+		print(get_parent().name)
+		if get_parent().name != "Palette":
+			print(get_parent().name)
+			var new_parent = get_node("/../Background/Palette/")
+			get_parent().remove_child(self)
+			new_parent.add_child(self)
 
 
 func _on_BoundingBox_gui_input(event):
-	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and mouse_inside:
-		dragging = event.pressed
-		#initial_mouse_position = event.position
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and event.pressed and mouse_inside:
+			dragging = true
+			print(dragging)
+			if dragging:
+				var new_parent = get_node("../../../ActiveTetromino")
+				get_parent().remove_child(self)
+				new_parent.add_child(self)
 	elif event is InputEventMouseMotion and dragging:
-		#position = get_global_mouse_position()
-		#set_position(get_viewport().get_mouse_position() + camera.global_position)
-		#position = event.relative
-		#position = get_viewport().get_mouse_position()
-		#position = get_global_transform().origin + event.position
-		#position = get_canvas_transform().affine_inverse().xform(event.position)
-		#shift_vector = position - initial_mouse_position
 		position = get_local_mouse_position()
