@@ -68,7 +68,7 @@ points = PoolVector3Array( -0.5, 0.25, 5, 0.5, 0.25, -5, 0.5, 0.25, 5, -0.5, 0.2
 [node name="Spatial" type="Spatial"]
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.21551, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.49592, 9.6395 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 physics_material_override = SubResource( 1 )

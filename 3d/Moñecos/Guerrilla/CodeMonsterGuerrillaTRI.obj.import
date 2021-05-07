@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CodeMonsterGuerrillaTRI.obj-5a646de1ffe223eabc4d600191b1cd4d.mesh"
+
+[deps]
+
+files=[ "res://.import/CodeMonsterGuerrillaTRI.obj-5a646de1ffe223eabc4d600191b1cd4d.mesh" ]
+
+source_file="res://Moñecos/Guerrilla/CodeMonsterGuerrillaTRI.obj"
+dest_files=[ "res://.import/CodeMonsterGuerrillaTRI.obj-5a646de1ffe223eabc4d600191b1cd4d.mesh", "res://.import/CodeMonsterGuerrillaTRI.obj-5a646de1ffe223eabc4d600191b1cd4d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
