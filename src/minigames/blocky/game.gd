@@ -20,7 +20,7 @@ func fetch_new_tetrominos():
 	$Background/Palette.add_child(available_tetrominos[1])
 
 
-func new_tetromino(sourcePosition, destinationPosition):
+func new_tetromino(sourcePosition, palettePosition):
 	var random_tetromino = randi() % 5
 	var tetromino
 	
@@ -40,7 +40,6 @@ func new_tetromino(sourcePosition, destinationPosition):
 	tetromino.set_rotation_degrees((randi() % 4) * 90)
 	tetromino.set_position(sourcePosition)
 	
-	tetromino.sourcePosition = sourcePosition
-	tetromino.destinationPosition = destinationPosition
+	tetromino.palettePosition = to_global(palettePosition)
 	
 	return tetromino
