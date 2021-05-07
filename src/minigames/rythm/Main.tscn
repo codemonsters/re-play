@@ -48,14 +48,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="Background"]
-margin_left = 50.0
-margin_top = -50.0
-margin_right = 250.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

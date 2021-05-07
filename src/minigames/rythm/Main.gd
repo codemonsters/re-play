@@ -34,6 +34,9 @@ const piece_height = 50
 # Constante velocidad (nº de ticks para bajar las piezas)
 const speed_ticks = 20
 
+# DEBUGGING
+var new_rect
+
 var speed
 
 const assets_dir = "res://assets/"
@@ -47,8 +50,15 @@ func _ready():
 	notes_file.close()
 	randomize()
 	tempo = rand_range(0.2, 0.25)
-	speed = (bar_distance+((piece_height)/2)-bar_height)/(speed_ticks*tempo) # Nos llevó 25 minutos descubrir esta ecuación. No caigas en el mismo error de tratar de entenderla.
+	# Nos llevó 25 minutos descubrir esta ecuación. No caigas en el mismo error de tratar de entenderla.
+	speed = (bar_distance + ((piece_height) / 2) - bar_height) / (speed_ticks * tempo)
 	prepare_queues()
+
+	#DEBUGGING
+	new_rect = ColorRect.new()
+	$Background.add_child(new_rect)
+
+
 
 func count_down():
 	$Background/Countdown.set_text(str(current_countdown))
@@ -101,7 +111,13 @@ func start_game():
 	
 func _process(delta):
 	if game_started:
-		$Background/ColorRect.rect_position.y = $Background/ColorRect.rect_position.y+speed*delta
+		#$Background/ColorRect.rect_position.y = $Background/ColorRect.rect_position.y+speed*delta
+		#new_rect.rect_position.y = new_rect.rect_position.y+speed*delta
+		new_rect.rect_size.x = 200
+		new_rect.rect_size.y = 50
+		new_rect.rect_position.x = 200
+		new_rect.rect_position.y = 100
+
 
 func time_tick():
 	if current_countdown != 5:
