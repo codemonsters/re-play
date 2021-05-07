@@ -20,11 +20,21 @@ var rectangles_queue = []
 # NOTA: Los rectángulos tardan 4 ticks en bajar desde que aparece su primer pixel hasta que tienen que sonar
 
 var notes # Referencia para obtener los nombres de los archivos de las notas y los acordes.
-var tempo # Segundos por beat
+var tempo # Segundos por TICK
 
 # Variables para que el kick y la caja se intercalen
 var next_kick = true
 var next_drum = true
+
+# Constantes de la posición de los objetos en la pantalla (px)
+const bar_distance = 750
+const bar_height = 20
+const piece_height = 50
+
+# Constante velocidad (nº de ticks para bajar las piezas)
+const speed_ticks = 20
+
+var speed
 
 const assets_dir = "res://assets/"
 
@@ -37,6 +47,7 @@ func _ready():
 	notes_file.close()
 	randomize()
 	tempo = rand_range(0.2, 0.25)
+	speed = (bar_distance+((piece_height)/2)-bar_height)/(speed_ticks*tempo) # Nos llevó 25 minutos descubrir esta ecuación. No caigas en el mismo error de tratar de entenderla.
 	prepare_queues()
 
 func count_down():
@@ -89,7 +100,8 @@ func start_game():
 	$Timer.start()
 	
 func _process(delta):
-	pass
+	if game_started:
+		$Background/ColorRect.rect_position.y = $Background/ColorRect.rect_position.y+speed*delta
 
 func time_tick():
 	if current_countdown != 5:
@@ -136,7 +148,7 @@ func prepare_queues():
 				notes_queue.append([time, _notes])
 				if _notes.size() > 0:
 					previous_note = _notes[0]
-	print(notes_queue)
+	#print(notes_queue)
 
 # FIXME: EN LA VERSION FINAL QUITAR LO SIGUIENTE. DE MOMENTO LO DEJAMOS POR SI ACASO PASA ALGO... 😜
 func prepare_queues_old():
@@ -162,3 +174,4 @@ func prepare_queues_old():
 					if !_notes.has(_note):
 						_notes.append(_note)
 				notes_queue.append([time, _notes])
+
