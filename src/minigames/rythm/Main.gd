@@ -100,8 +100,10 @@ func time_tick():
 
 func handle_notes():
 	if left == 0:
-		if counter >= len(notes_queue):
+		if counter >= notes_queue.size():
 			print("MINIJUEGO FINALIZADO")
+			# DEBUG FIXME TODO: SOLO DE MOMENTO PARA EL DESARROLLO QUITAR LUEGO POR FAVOR NO OLVIDARSE
+			get_tree().quit()
 
 		var _queue_element = notes_queue[counter]
 		counter += 1
@@ -132,7 +134,8 @@ func prepare_queues():
 						_notes.append(_note)
 						break
 				notes_queue.append([time, _notes])
-				previous_note = _notes[0]
+				if _notes.size() > 0:
+					previous_note = _notes[0]
 	print(notes_queue)
 
 # FIXME: EN LA VERSION FINAL QUITAR LO SIGUIENTE. DE MOMENTO LO DEJAMOS POR SI ACASO PASA ALGO... 😜
