@@ -88,7 +88,7 @@ shadow_enabled = true
 omni_range = 4.34464
 
 [node name="OmniLight2" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74354, 2.55619, 4.64823 )
 
 [node name="OmniLight3" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 0 )

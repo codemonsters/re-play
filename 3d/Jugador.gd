@@ -42,16 +42,16 @@ func getInput():
 		alpha += 0.01
 		if alpha >= 1.6:
 			alpha = 1.6
-		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
-		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
-		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+#		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+#		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+#		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
 	else:
 		alpha -= 0.01
 		if alpha <= 0:
 			alpha = 0
-		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
-		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
-		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+#		get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+#		get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+#		get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
 	if not standingOnFloor:
 		movementVelocity.x = airVelocity.x + movementVelocity.x
 		movementVelocity.z = airVelocity.z + movementVelocity.z
@@ -86,18 +86,18 @@ func _unhandled_input(event):
 			alpha += event.relative.y / 100
 			if alpha >= 1.6:
 				alpha = 1.6
-			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
-			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
-			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+#			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+#			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+#			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
 			#get_node("Camera").rotate_x(-alpha)
 			print(alpha)
 		elif event.relative.y < 0:
 			alpha += event.relative.y / 100
 			if alpha >= -1.6:
 				alpha = -1.6
-			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
-			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
-			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
+#			get_node("Camera").global_transform.origin.y = global_transform.origin.y + sin(alpha) * 5
+#			get_node("Camera").global_transform.origin.z = global_transform.origin.z + cos(alpha) * 5
+#			get_node("Camera").look_at(Vector3(0, 0, -1), Vector3.UP)
 			#get_node("Camera").rotate_x(-alpha)
 			print(alpha)
 
