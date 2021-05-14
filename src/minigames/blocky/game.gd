@@ -13,17 +13,20 @@ func _ready():
 
 
 func fetch_new_tetrominos():
+	var palette_pos = $Background/Palette.rect_position
+	var palette_rect_size = $Background/Palette.rect_size
 	assert(len(available_tetrominos) == 0, "Palette must be empty before fetching new tetrominos")
-	available_tetrominos.append(new_tetromino(Vector2(112, -64), Vector2(112, ($Background/Palette.rect_size.y / 4) * 3))) # TODO: Expresar posiciones origen y destino en función del tamaño del nodo Palette
-	available_tetrominos.append(new_tetromino(Vector2(112, -192), Vector2(112, ($Background/Palette.rect_size.y / 4)))) # TODO: Expresar posiciones origen y destino en función del tamaño del nodo Palette
-	$Background/Palette.add_child(available_tetrominos[0])
-	$Background/Palette.add_child(available_tetrominos[1])
+	
+	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64 - palette_rect_size.y / 2), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 1 * (palette_rect_size.y / 4))))
+	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 3 * (palette_rect_size.y / 4))))
+	
+	$Background/TetrominosPreparing.add_child(available_tetrominos[0])
+	$Background/TetrominosPreparing.add_child(available_tetrominos[1])
 
 
-func new_tetromino(sourcePosition, palettePosition):
+func new_tetromino(initial_position, palette_position):
 	var random_tetromino = randi() % 5
 	var tetromino
-	
 	
 	match random_tetromino:
 		0:
@@ -38,8 +41,6 @@ func new_tetromino(sourcePosition, palettePosition):
 			tetromino = tetromino_t.instance()
 	
 	tetromino.set_rotation_degrees((randi() % 4) * 90)
-	tetromino.set_position(sourcePosition)
-	
-	tetromino.palettePosition = to_global(palettePosition)
-	
+	tetromino.set_position(initial_position)
+	tetromino.set_palette_position(palette_position)
 	return tetromino
