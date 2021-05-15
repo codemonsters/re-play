@@ -55,7 +55,7 @@ func _on_BoundingBox_gui_input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and mouse_inside:
 		position = get_global_mouse_position()
 		dragging = true
-		switch_parent("../../../ActiveTetromino")
+		# switch_parent("../../../ActiveTetromino")
 
 
 func set_palette_position(pos):
