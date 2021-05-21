@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=1]
-[ext_resource path="res://minigames/blocky/block.tscn" type="PackedScene" id=2]
 [ext_resource path="res://minigames/blocky/StageRect.gd" type="Script" id=3]
 [ext_resource path="res://minigames/blocky/game.gd" type="Script" id=4]
 
@@ -40,12 +39,6 @@ __meta__ = {
 [node name="EmptyBlocks" type="Node2D" parent="Background/Stage"]
 
 [node name="Blocks" type="Node2D" parent="Background/Stage"]
-
-[node name="Block" parent="Background/Stage/Blocks" instance=ExtResource( 2 )]
-position = Vector2( 368, 368 )
-
-[node name="Block2" parent="Background/Stage/Blocks" instance=ExtResource( 2 )]
-position = Vector2( 16, 16 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Background"]
 margin_left = 32.0
@@ -183,6 +176,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TetrominosPreparing" type="Node2D" parent="Background"]
+
+[node name="TetrominoCover" type="ColorRect" parent="Background"]
+margin_left = 464.0
+margin_right = 688.0
+margin_bottom = 128.0
+color = Color( 0.027451, 0.937255, 0.360784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Message" type="ColorRect" parent="Background"]
 margin_left = 464.0
 margin_top = 32.0
@@ -213,4 +217,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ActiveTetromino" type="Node2D" parent="."]
+[node name="TetrominosAvailable" type="Node2D" parent="Background"]
