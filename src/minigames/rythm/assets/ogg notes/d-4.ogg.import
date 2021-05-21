@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/d-4.ogg-f5f15dbaa51be411974b1550f87c5dc5.oggstr"
+path="res://.import/d-4.ogg-2e3424da5a6e82e47e2a73a2e7db708e.oggstr"
 
 [deps]
 
-source_file="res://minigames/rythm/assets/ogg notes/d-4.ogg"
-dest_files=[ "res://.import/d-4.ogg-f5f15dbaa51be411974b1550f87c5dc5.oggstr" ]
+source_file="res://assets/ogg notes/d-4.ogg"
+dest_files=[ "res://.import/d-4.ogg-2e3424da5a6e82e47e2a73a2e7db708e.oggstr" ]
 
 [params]
 

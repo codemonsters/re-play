@@ -4,20 +4,21 @@ extends Node
 var current_countdown = 4
 var game_started = false
 
-var counter = 0 # Dentro de la lista notes_queue, que elemento coger despues
+# Constante velocidad (nº de ticks para bajar las piezas)
+const speed_ticks = 20
+
+var counter = 0 # Dentro de la lista notes_queue, qué elemento coger despues
 var left = 0 # Cuantos ticks quedan antes pasar al siguiente elemento de la lista notes_queue
 
+# Lo mismo, pero unos pocos ticks adelantado para colocar las piezas fuera de la pantalla
+var counter_pieces = speed_ticks - 1
+var left_pieces = 0
+
 var notes_queue = [] # Array de notas a tocar durante la partida
-# El formato del array anterior es el siguiente:
+# El formato de cada uno de los elementos del array anterior es el siguiente:
 #  - Hay dos elementos
 #  - El primero de estos elementos indica el tiempo en ticks que deben durar las notas
 #  - El segundo es un array con los números de las notas a reproducir (números en base a la posición en el array "files" en tonos.json)
-
-var rectangles_queue = []
-# El formato del array anterior es el siguiente (dos elementos):
-#  - El primero de estos elementos indica la altura del rectángulo
-#  - El segundo indica el tiempo en ticks desde el inicio de la partida que deben pasar antes de posicionar el rectángulo a punto de entrar en pantalla
-# NOTA: Los rectángulos tardan 4 ticks en bajar desde que aparece su primer pixel hasta que tienen que sonar
 
 var notes # Referencia para obtener los nombres de los archivos de las notas y los acordes.
 var tempo # Segundos por TICK
@@ -31,11 +32,12 @@ const bar_distance = 750
 const bar_height = 20
 const piece_height = 50
 
-# Constante velocidad (nº de ticks para bajar las piezas)
-const speed_ticks = 20
+# FIXME Cambiar por los valores reales de tamaño
+const vheight = 1280
+const vwidth = 960
 
-# DEBUGGING
-var new_rect
+# Array of rects currently on screen.
+const rects = []
 
 var speed
 
@@ -51,13 +53,20 @@ func _ready():
 	randomize()
 	tempo = rand_range(0.2, 0.25)
 	# Nos llevó 25 minutos descubrir esta ecuación. No caigas en el mismo error de tratar de entenderla.
-	speed = (bar_distance + ((piece_height) / 2) - bar_height) / (speed_ticks * tempo)
+	# PD: La barra tiene que empezar en y = -piece_height
+	speed = (bar_distance + (piece_height/2.0) - bar_height) / (speed_ticks * tempo)
 	prepare_queues()
+	new_rect(200, -piece_height)
 
-	#DEBUGGING
-	new_rect = ColorRect.new()
+
+func new_rect(posx, posy=(-piece_height), sizey=50, sizex=200):
+	var new_rect = ColorRect.new()
 	$Background.add_child(new_rect)
-
+	new_rect.rect_position.x = posx
+	new_rect.rect_position.y = posy
+	new_rect.rect_size.x = sizex
+	new_rect.rect_size.y = sizey
+	rects.append(new_rect)
 
 
 func count_down():
@@ -111,13 +120,8 @@ func start_game():
 	
 func _process(delta):
 	if game_started:
-		#$Background/ColorRect.rect_position.y = $Background/ColorRect.rect_position.y+speed*delta
-		#new_rect.rect_position.y = new_rect.rect_position.y+speed*delta
-		new_rect.rect_size.x = 200
-		new_rect.rect_size.y = 50
-		new_rect.rect_position.x = 200
-		new_rect.rect_position.y = 100
-
+		for rect in rects:
+			rect.rect_position.y = rect.rect_position.y + speed * delta
 
 func time_tick():
 	if current_countdown != 5:
@@ -125,6 +129,7 @@ func time_tick():
 	else:
 		play_drum()
 		handle_notes()
+		handle_pieces()
 
 func handle_notes():
 	if left == 0:
@@ -143,6 +148,23 @@ func handle_notes():
 			play_piano(x)
 	else:
 		left -= 1
+
+func handle_pieces():
+	if left_pieces == 0:
+		if counter_pieces >= notes_queue.size():
+			return
+
+		var _queue_element = notes_queue[counter_pieces]
+		counter_pieces += 1
+
+		left_pieces = _queue_element[0]
+		var _notes = _queue_element[1]
+
+		for x in _notes:
+			new_rect((vwidth / 5.0) * (int(x) % 4))
+	else:
+		left -= 1
+	
 
 func prepare_queues():
 	var previous_note = 2
@@ -164,30 +186,3 @@ func prepare_queues():
 				notes_queue.append([time, _notes])
 				if _notes.size() > 0:
 					previous_note = _notes[0]
-	#print(notes_queue)
-
-# FIXME: EN LA VERSION FINAL QUITAR LO SIGUIENTE. DE MOMENTO LO DEJAMOS POR SI ACASO PASA ALGO... 😜
-func prepare_queues_old():
-	for chord_num in range(10):
-		randomize()
-		var chord = notes["chords"][randi() % notes["chords"].size()]
-		for beat_num in range(2):
-			randomize()
-			var various_notes = true if randi() % 2 else false
-			var time = 2 if various_notes else 1
-			for note_num in range(time):
-				randomize()
-				var _notes = []
-				var _simultaneous_rand = randi() % 9
-				var _simultaneous_notes = 1
-				if _simultaneous_rand < 2:
-					_simultaneous_notes = 3
-				elif _simultaneous_rand < 4:
-					_simultaneous_notes = 2
-				for simultaneous_num in range(_simultaneous_notes):
-					randomize()
-					var _note = chord[randi() % chord.size()]
-					if !_notes.has(_note):
-						_notes.append(_note)
-				notes_queue.append([time, _notes])
-
