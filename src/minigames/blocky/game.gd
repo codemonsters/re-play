@@ -1,15 +1,39 @@
 extends Node2D
 
+const ROWS = 12
+const COLS = 12
+
 onready var tetromino_l = preload("res://minigames/blocky/tetrominos/tetromino_l.tscn")
 onready var tetromino_line = preload("res://minigames/blocky/tetrominos/tetromino_line.tscn")
 onready var tetromino_s = preload("res://minigames/blocky/tetrominos/tetromino_s.tscn")
 onready var tetromino_square = preload("res://minigames/blocky/tetrominos/tetromino_square.tscn")
 onready var tetromino_t = preload("res://minigames/blocky/tetrominos/tetromino_t.tscn")
 var available_tetrominos = [] # List of tetrominos available in the palette (right side of the screen)
+var matrix = []
+var line_color = Color(51.0 / 255.0, 255.0 / 255.0, 51.0 / 255.0)
 
 
 func _ready():
+	create_empty_blocks()
 	fetch_new_tetrominos() 
+
+
+func create_empty_blocks():
+	# initialize stage matrix
+	var blockContainer = preload("res://minigames/blocky/block_container.tscn")
+	
+	var width = $Background/Stage.get_size().x
+	var height = $Background/Stage.get_size().y
+	
+	for row in range(ROWS):
+		matrix.append([])
+		for col in range(COLS):
+			var x = col * width / COLS + width / (2 * COLS)
+			var y = row * height / ROWS + height / (2 * ROWS)
+			var bC = blockContainer.instance()
+			bC.set_position(Vector2(x, y))
+			$Background/Stage/EmptyBlocks.add_child(bC)
+			matrix[row].append(bC)
 
 
 func fetch_new_tetrominos():
@@ -43,4 +67,12 @@ func new_tetromino(initial_position, palette_position):
 	tetromino.set_rotation_degrees((randi() % 4) * 90)
 	tetromino.set_position(initial_position)
 	tetromino.set_palette_position(palette_position)
+	tetromino.set_game(self)
 	return tetromino
+
+
+func get_closest_anchor_point(tetromino):
+	var bounding_box_corner = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + tetromino.position
+	
+	print(matrix[1][1].get_corner_position())
+

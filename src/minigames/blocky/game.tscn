@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=1]
-[ext_resource path="res://minigames/blocky/StageRect.gd" type="Script" id=3]
 [ext_resource path="res://minigames/blocky/game.gd" type="Script" id=4]
 
 [node name="Game" type="Node2D"]
@@ -31,7 +30,6 @@ margin_top = 160.0
 margin_right = 416.0
 margin_bottom = 544.0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
-script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
