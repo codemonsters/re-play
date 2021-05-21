@@ -5,20 +5,14 @@ var mouse_inside = false # flag, values is true when the mouse is inside Boundin
 var initial_mouse_posisition
 var palette_position
 var available = false # flag, true if the tetromino is ready to be dragged
+var pointer_offset = Vector2(0, 0) # distance between the pointer and the center of the tetromino
 
 func _process(delta):
 	# Pieza vuelve a la paleta tras soltarla
 	if palette_position and not dragging:
-		#var shift_vector = (get_node("../Palette").rect_position - position).normalized() * delta * 100
 		var shift_vector = (palette_position - position).normalized() * delta * 600
 		if shift_vector.length() > (palette_position - position).length():
 			position = palette_position
-#			if get_parent().name != "Palette":
-#				switch_parent("../../Background/Palette")
-#			else:
-#				print("en posición")
-#				position = to_global(position)
-#				switch_parent("../../../Background")
 		else:
 			position += shift_vector
 		
@@ -47,15 +41,15 @@ func _input(event):
 		dragging = false
 	# Movemos pieza mientras arrastramos
 	elif event is InputEventMouseMotion and dragging:
-		position = get_global_mouse_position()
+		position = get_global_mouse_position() - pointer_offset
 
 
 func _on_BoundingBox_gui_input(event):
 	# Cogemos el tetromino (comenzamos a arrastrar)
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and mouse_inside:
-		position = get_global_mouse_position()
+		pointer_offset = get_global_mouse_position() - position
+		print(str(pointer_offset.x) + ", " + str(pointer_offset.y))
 		dragging = true
-		# switch_parent("../../../ActiveTetromino")
 
 
 func set_palette_position(pos):
