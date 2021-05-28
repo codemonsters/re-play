@@ -22,6 +22,8 @@ func _process(delta):
 		if not available and position == palette_position:
 			switch_parent("../../TetrominosAvailable")
 			available = true
+		else:
+			available = false
 
 func _on_BoundingBox_mouse_entered():
 	mouse_inside = true
@@ -42,8 +44,8 @@ func _input(event):
 	# Botón izquierdo liberado (soltamos los tetrominos)
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and not event.pressed:
 		dragging = false
-		if mouse_inside:
-			var closest_anchor_point = game.get_closest_anchor_point(self)
+		if mouse_inside and not available:
+			var closest_anchor_point = game.get_closest_block_container(self)
 	
 	# Movemos pieza mientras arrastramos
 	elif event is InputEventMouseMotion and dragging:

@@ -8,5 +8,6 @@ func _on_StartBlinkTimer_timeout():
 
 
 func _input(event):
-	if (event is InputEventMouseButton and event.pressed) or (event is InputEventScreenTouch and event.pressed):
+	if (event is InputEventMouseButton and event.pressed) or (event is InputEventScreenTouch and event.pressed) \
+			or (event is InputEventKey and event.pressed):
 		emit_signal("blocky_start_game")

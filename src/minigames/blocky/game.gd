@@ -71,8 +71,12 @@ func new_tetromino(initial_position, palette_position):
 	return tetromino
 
 
-func get_closest_anchor_point(tetromino):
+func get_closest_block_container(tetromino):
 	var bounding_box_corner = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + tetromino.position
 	
+	for row in range(ROWS):
+		for col in range(COLS):
+			if (matrix[row][col].get_corner_position() - bounding_box_corner) <= Vector2(16, 16):
+				print("Estoy cerca del bloque en: " + str(col) + ", " + str(col))
+		
 	print(matrix[1][1].get_corner_position())
-

@@ -135,6 +135,7 @@ func handle_notes():
 		if counter >= notes_queue.size():
 			print("MINIJUEGO FINALIZADO")
 			# DEBUG FIXME TODO: SOLO DE MOMENTO PARA EL DESARROLLO QUITAR LUEGO POR FAVOR NO OLVIDARSE
+			# Ole, muy buen recordatorio jaja ↑
 			get_tree().quit()
 			return
 
