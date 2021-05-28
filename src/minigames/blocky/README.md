@@ -4,7 +4,13 @@ Juego inspirado en el [1212!](https://games.cdn.famobi.com/html5games/0/1212/v37
 
 ## Misc
 
-Resolution: 720x576px (4:3)
+### Resolution: 720x576px (4:3)
+
+### Palette:
+	* Color 1→ #07ef5c ```Verde claro```
+	* Color 2→ #1d2938 ```Gris/azul``` 
+	* Color 3→ #2a616e ```Gris/azul claro```
+	* Color 4→ #13b37e ```Otro verde:)```
 
 ## Resources:
 
