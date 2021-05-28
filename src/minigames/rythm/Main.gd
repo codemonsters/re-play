@@ -5,7 +5,7 @@ var current_countdown = 4
 var game_started = false
 
 # Constante velocidad (nº de ticks para bajar las piezas)
-const speed_ticks = 20
+const speed_ticks = 10
 
 var counter = 0 # Dentro de la lista notes_queue, qué elemento coger despues
 var left = 0 # Cuantos ticks quedan antes pasar al siguiente elemento de la lista notes_queue
@@ -31,10 +31,11 @@ var next_drum = true
 const bar_distance = 750
 const bar_height = 20
 const piece_height = 50
+const piece_width = 200
 
 # FIXME Cambiar por los valores reales de tamaño
-const vheight = 1280
-const vwidth = 960
+const vheight = 960
+const vwidth = 1280
 
 # Array of rects currently on screen.
 const rects = []
@@ -54,11 +55,11 @@ func _ready():
 	tempo = rand_range(0.2, 0.25)
 	# Nos llevó 25 minutos descubrir esta ecuación. No caigas en el mismo error de tratar de entenderla.
 	# PD: La barra tiene que empezar en y = -piece_height
-	speed = (bar_distance + (piece_height/2.0) - bar_height) / (speed_ticks * tempo)
+	speed = (bar_distance - bar_height) / (speed_ticks * tempo)
 	prepare_queues()
 
 
-func new_rect(posx, posy=(-piece_height), sizey=50, sizex=200):
+func new_rect(posx, posy=(-piece_height), sizex=piece_width, sizey=piece_height):
 	var new_rect = ColorRect.new()
 	$Background.add_child(new_rect)
 	new_rect.rect_position.x = posx
@@ -162,7 +163,8 @@ func handle_pieces():
 		var _notes = _queue_element[1]
 
 		for x in _notes:
-			new_rect((vwidth / 5.0) * (int(x) % 4))
+			randomize()
+			new_rect((vwidth / 5.0 * ((randi() % 4) + 1) - piece_width / 2.0))
 	else:
 		left_pieces -= 1
 	
