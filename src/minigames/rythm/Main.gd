@@ -11,7 +11,7 @@ var counter = 0 # Dentro de la lista notes_queue, qué elemento coger despues
 var left = 0 # Cuantos ticks quedan antes pasar al siguiente elemento de la lista notes_queue
 
 # Lo mismo, pero unos pocos ticks adelantado para colocar las piezas fuera de la pantalla
-var counter_pieces = speed_ticks - 1
+var counter_pieces = 1
 var left_pieces = 0
 
 var notes_queue = [] # Array de notas a tocar durante la partida
@@ -56,7 +56,6 @@ func _ready():
 	# PD: La barra tiene que empezar en y = -piece_height
 	speed = (bar_distance + (piece_height/2.0) - bar_height) / (speed_ticks * tempo)
 	prepare_queues()
-	new_rect(200, -piece_height)
 
 
 func new_rect(posx, posy=(-piece_height), sizey=50, sizex=200):
@@ -106,7 +105,7 @@ func play_sound(sound_name):
 	$AudioStreamPlayer.set_stream(sound)
 	$AudioStreamPlayer.play()
 
-func play_sound_mk2(sound_name):
+func play_sound_mk2(sound_name): # Lo mismo que arriba, pero por segunda vez para poder reproducir dos a la vez.
 	var sound = load(assets_dir + sound_name)
 	sound.set_loop(false)
 	$AudioStreamPlayer2.set_stream(sound)
@@ -137,6 +136,7 @@ func handle_notes():
 			print("MINIJUEGO FINALIZADO")
 			# DEBUG FIXME TODO: SOLO DE MOMENTO PARA EL DESARROLLO QUITAR LUEGO POR FAVOR NO OLVIDARSE
 			get_tree().quit()
+			return
 
 		var _queue_element = notes_queue[counter]
 		counter += 1
@@ -163,11 +163,12 @@ func handle_pieces():
 		for x in _notes:
 			new_rect((vwidth / 5.0) * (int(x) % 4))
 	else:
-		left -= 1
+		left_pieces -= 1
 	
 
 func prepare_queues():
 	var previous_note = 2
+	notes_queue.append([speed_ticks, []])
 	for chord_num in range(10):
 		randomize()
 		var chord = notes["chords"][randi() % notes["chords"].size()]
@@ -186,3 +187,4 @@ func prepare_queues():
 				notes_queue.append([time, _notes])
 				if _notes.size() > 0:
 					previous_note = _notes[0]
+	print(notes_queue)
