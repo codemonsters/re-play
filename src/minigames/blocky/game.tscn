@@ -42,16 +42,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="EmptyBlocks" type="Node2D" parent="Background/Stage"]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Blocks" type="Node2D" parent="Background/Stage"]
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="HBoxContainer" type="HBoxContainer" parent="Background"]
 margin_left = 32.0
 margin_top = 32.0
