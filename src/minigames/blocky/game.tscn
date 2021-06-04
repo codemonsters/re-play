@@ -5,6 +5,9 @@
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Background" type="ColorRect" parent="."]
 margin_left = -1.88776
@@ -13,6 +16,7 @@ margin_right = 718.112
 margin_bottom = 575.056
 color = Color( 0.027451, 0.937255, 0.360784, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -23,6 +27,7 @@ margin_right = 688.0
 margin_bottom = 544.0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -33,12 +38,19 @@ margin_right = 416.0
 margin_bottom = 544.0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="EmptyBlocks" type="Node2D" parent="Background/Stage"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Blocks" type="Node2D" parent="Background/Stage"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Background"]
 margin_left = 32.0
@@ -46,6 +58,7 @@ margin_top = 32.0
 margin_right = 416.0
 margin_bottom = 148.0
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -64,6 +77,7 @@ text = "LINES
 LEFT"
 fit_content_height = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -74,6 +88,7 @@ margin_bottom = 116.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.5
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -88,6 +103,7 @@ size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -109,6 +125,7 @@ bbcode_text = "[center]0[/center]"
 text = "0"
 fit_content_height = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -119,6 +136,7 @@ margin_bottom = 116.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.5
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -133,6 +151,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -154,6 +173,7 @@ bbcode_text = "[center]10[/center]"
 text = "10"
 fit_content_height = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -173,10 +193,14 @@ text = "TIME
 LEFT"
 fit_content_height = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="TetrominosPreparing" type="Node2D" parent="Background"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="TetrominoCover" type="ColorRect" parent="Background"]
 margin_left = 464.0
@@ -184,6 +208,7 @@ margin_right = 688.0
 margin_bottom = 128.0
 color = Color( 0.027451, 0.937255, 0.360784, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -194,6 +219,7 @@ margin_right = 688.0
 margin_bottom = 120.0
 color = Color( 0.113725, 0.160784, 0.219608, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -214,7 +240,11 @@ bbcode_enabled = true
 bbcode_text = "[center][wave amp=50 freq=3] DRAG BLOCKS TO MAKE LINES [/wave][/center]"
 text = " DRAG BLOCKS TO MAKE LINES "
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="TetrominosAvailable" type="Node2D" parent="Background"]
+__meta__ = {
+"_edit_lock_": true
+}
