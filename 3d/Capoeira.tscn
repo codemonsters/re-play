@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://6-step_example.webm" type="VideoStream" id=1]
+[ext_resource path="res://VideoPlayer.gd" type="Script" id=2]
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath(".")
+
+[node name="Capoeira" type="Viewport"]
+size = Vector2( 640, 360 )
+render_target_v_flip = true
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+stream = ExtResource( 1 )
+autoplay = true
+script = ExtResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = SubResource( 1 )
+
+[connection signal="finished" from="VideoPlayer" to="VideoPlayer" method="_on_VideoPlayer_finished"]
