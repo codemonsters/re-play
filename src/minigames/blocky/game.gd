@@ -66,7 +66,8 @@ func new_tetromino(initial_position, palette_position):
 		4:
 			tetromino = tetromino_t.instance()
 	
-	tetromino.set_rotation_degrees((randi() % 4) * 90)
+	tetromino.rotation_index = randi() % 4
+	tetromino.set_rotation_degrees((tetromino.rotation_index) * 90)
 	tetromino.set_position(initial_position)
 	tetromino.set_palette_position(palette_position)
 	tetromino.set_game(self)
@@ -74,8 +75,8 @@ func new_tetromino(initial_position, palette_position):
 
 
 func get_closest_block_container(tetromino):
-	var bounding_box_corner_center = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + $Background/Stage.rect_position
-	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + str(bounding_box_corner_center))
+	var bounding_box_corner_center = tetromino.get_bounding_box_corner_block()
+	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + str(bounding_box_corner_center) + "; rotation_indx → " + str(tetromino.rotation_index))
 	for row in range(ROWS):
 		for col in range(COLS):
 			if (matrix[row][col].get_corner_position() - bounding_box_corner_center) <= Vector2(16, 16):

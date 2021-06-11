@@ -9,6 +9,7 @@ var palette_position
 var available = false # flag, true if the tetromino is ready to be dragged
 var pointer_offset = Vector2(0, 0) # distance between the pointer and the center of the tetromino
 var game # Reference to main game object
+var rotation_index # 0 → no rotation; 1 → 90º; 2 → 180ºç; 3 → 270º
 
 func _process(delta):
 	# Pieza vuelve a la paleta tras soltarla
@@ -44,8 +45,6 @@ func _input(event):
 	# Botón izquierdo liberado (soltamos los tetrominos)
 	if event is InputEventMouseButton and not event.pressed and \
 			event.button_index == BUTTON_LEFT and not event.is_echo() and dragging:
-		
-		print("dragging = " + str(dragging) + "; evento de tipo -> " + str(event))
 		dragging = false
 		var _closest_anchor_point = game.get_closest_block_container(self)
 	
@@ -56,7 +55,8 @@ func _input(event):
 
 func _on_BoundingBox_gui_input(event):
 	# Cogemos el tetromino (comenzamos a arrastrar)
-	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and mouse_inside:
+	if event is InputEventMouseButton and event.pressed and \
+			event.button_index == BUTTON_LEFT and not event.is_echo():
 		pointer_offset = get_global_mouse_position() - position
 		dragging = true
 
@@ -67,3 +67,13 @@ func set_palette_position(pos):
 
 func set_game(g):
 	game = g
+
+func get_bounding_box_corner_block():
+	var corner_block_pos = get_node("CollisionShape2D/BoundingBox").rect_position
+	if rotation_index == 0 or rotation_index == 1:
+		corner_block_pos += Vector2(16, 16)
+	elif rotation_index == 1:
+		corner_block_pos -= Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16)
+	else:
+		corner_block_pos += Vector2(16, 16 - get_node("CollisionShape2D/BoundingBox").rect_size.x)
+	return corner_block_pos
