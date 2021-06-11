@@ -42,10 +42,12 @@ func switch_parent(new_parent):
 
 func _input(event):
 	# Botón izquierdo liberado (soltamos los tetrominos)
-	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and not event.pressed:
+	if event is InputEventMouseButton and not event.pressed and \
+			event.button_index == BUTTON_LEFT and not event.is_echo() and dragging:
+		
+		print("dragging = " + str(dragging) + "; evento de tipo -> " + str(event))
 		dragging = false
-		if mouse_inside and not available:
-			var closest_anchor_point = game.get_closest_block_container(self)
+		var _closest_anchor_point = game.get_closest_block_container(self)
 	
 	# Movemos pieza mientras arrastramos
 	elif event is InputEventMouseMotion and dragging:

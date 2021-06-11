@@ -36,7 +36,6 @@ func create_empty_blocks():
 			bC.set_position(Vector2(x, y))
 			$Background/Stage.add_child(bC)
 			matrix[row].append(bC)
-			print("Insertando contenedor en: " + str(to_global(matrix[row][col].position)))
 
 
 func fetch_new_tetrominos():
@@ -75,8 +74,8 @@ func new_tetromino(initial_position, palette_position):
 
 
 func get_closest_block_container(tetromino):
-	var bounding_box_corner_center = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + Vector2(16, 16)
-	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + bounding_box_corner_center)	
+	var bounding_box_corner_center = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + $Background/Stage.rect_position
+	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + str(bounding_box_corner_center))
 	for row in range(ROWS):
 		for col in range(COLS):
 			if (matrix[row][col].get_corner_position() - bounding_box_corner_center) <= Vector2(16, 16):
