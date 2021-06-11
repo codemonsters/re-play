@@ -1,0 +1,156 @@
+# Blender MTL File: 'ArcadeRoomCodeMonsters.blend'
+# Material Count: 15
+
+newmtl 80s-Retro-Sci-Fi-FPoster-and-lyer-Templates-for-Adobe-Photoshop
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\admin\\Downloads\\80s-Retro-Sci-Fi-FPoster-and-lyer-Templates-for-Adobe-Photoshop.jpg
+map_d C:\\Users\\admin\\Downloads\\80s-Retro-Sci-Fi-FPoster-and-lyer-Templates-for-Adobe-Photoshop.jpg
+
+newmtl BG
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Base
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl BotonAmarillo
+Ns 440.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.650005 0.543576 0.002690
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl BotonAzul
+Ns 440.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.002904 0.012040 0.239548
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl BotonVerde
+Ns 440.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.006508 0.239552 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Floor
+Ns 575.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Game
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl JoyRed
+Ns 440.999985
+Ka 1.000000 1.000000 1.000000
+Kd 0.814041 0.024473 0.021545
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Marquee
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Metal
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.723043 0.723043 0.723043
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl None
+Ns 500
+Ka 0.8 0.8 0.8
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl Wall
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.066806 0.066806 0.066806
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl robotlegion
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\admin\\Downloads\\robotlegion.jpg
+map_d C:\\Users\\admin\\Downloads\\robotlegion.jpg
+
+newmtl space-sluts-vintage-sci-fi-comic-book-cover-long-shot
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\admin\\Downloads\\space-sluts-vintage-sci-fi-comic-book-cover-long-shot.jpg
+map_d C:\\Users\\admin\\Downloads\\space-sluts-vintage-sci-fi-comic-book-cover-long-shot.jpg
