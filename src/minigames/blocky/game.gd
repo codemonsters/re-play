@@ -16,7 +16,6 @@ var line_color = Color(51.0 / 255.0, 255.0 / 255.0, 51.0 / 255.0)
 func _ready():
 	create_empty_blocks()
 	fetch_new_tetrominos()
-	print($Background/Stage.rect_position)
 
 
 func create_empty_blocks():
@@ -53,11 +52,11 @@ func fetch_new_tetrominos():
 func new_tetromino(initial_position, palette_position):
 	var random_tetromino = randi() % 5
 	var tetromino
-	
+
 	match random_tetromino:
 		0:
 			tetromino = tetromino_l.instance()
-		1: 
+		1:
 			tetromino = tetromino_line.instance()
 		2:
 			tetromino = tetromino_s.instance()
@@ -65,8 +64,9 @@ func new_tetromino(initial_position, palette_position):
 			tetromino = tetromino_square.instance()
 		4:
 			tetromino = tetromino_t.instance()
-	
-	tetromino.rotation_index = randi() % 4
+
+	#tetromino.rotation_index = randi() % 4
+	tetromino.rotation_index = 1 #DEBUG: Dejar como estaba arriba ↑
 	tetromino.set_rotation_degrees((tetromino.rotation_index) * 90)
 	tetromino.set_position(initial_position)
 	tetromino.set_palette_position(palette_position)

@@ -9,7 +9,7 @@ var palette_position
 var available = false # flag, true if the tetromino is ready to be dragged
 var pointer_offset = Vector2(0, 0) # distance between the pointer and the center of the tetromino
 var game # Reference to main game object
-var rotation_index # 0 → no rotation; 1 → 90º; 2 → 180ºç; 3 → 270º
+var rotation_index # 0 → no rotation; 1 → 90º; 2 → 180º; 3 → 270º
 
 func _process(delta):
 	# Pieza vuelve a la paleta tras soltarla
@@ -19,7 +19,6 @@ func _process(delta):
 			position = palette_position
 		else:
 			position += shift_vector
-		
 		if not available and position == palette_position:
 			switch_parent("../../TetrominosAvailable")
 			available = true
@@ -47,7 +46,6 @@ func _input(event):
 			event.button_index == BUTTON_LEFT and not event.is_echo() and dragging:
 		dragging = false
 		var _closest_anchor_point = game.get_closest_block_container(self)
-	
 	# Movemos pieza mientras arrastramos
 	elif event is InputEventMouseMotion and dragging:
 		position = get_global_mouse_position() - pointer_offset
@@ -70,10 +68,15 @@ func set_game(g):
 
 func get_bounding_box_corner_block():
 	var corner_block_pos = get_node("CollisionShape2D/BoundingBox").rect_position
-	if rotation_index == 0 or rotation_index == 1:
-		corner_block_pos += Vector2(16, 16)
+	print(str(corner_block_pos) + "------- rect_pos")
+
+	if rotation_index == 0:
+		corner_block_pos += Vector2(16, 16) #DEBUG: Parece que funciona
 	elif rotation_index == 1:
-		corner_block_pos -= Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16)
+		corner_block_pos = Vector2((get_node("CollisionShape2D/BoundingBox").rect_size.x / 2), -16)
+	elif rotation_index == 2:
+		print(Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16))
+		corner_block_pos -= Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16) #TODO: NO funciona, da datos erróneos :s
 	else:
 		corner_block_pos += Vector2(16, 16 - get_node("CollisionShape2D/BoundingBox").rect_size.x)
 	return corner_block_pos
