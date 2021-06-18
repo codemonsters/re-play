@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/monofonto.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Main.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 640, 10 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -32,6 +35,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Area2D" type="Area2D" parent="Background/Barrita"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Barrita/Area2D"]
+position = Vector2( 640, 10 )
+shape = SubResource( 2 )
+
 [node name="Countdown" type="Label" parent="Background"]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -54,4 +63,5 @@ __meta__ = {
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 
+[connection signal="body_entered" from="Background/Barrita/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="time_tick"]

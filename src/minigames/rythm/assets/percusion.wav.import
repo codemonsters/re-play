@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/percusion.wav-ca1f4168686ad6d2364d5bd3118b2759.sample"
+path="res://.import/percusion.wav-2f0bf38a9f2860b8a8a3cf03085ffcc9.sample"
 
 [deps]
 
-source_file="res://minigames/rythm/assets/percusion.wav"
-dest_files=[ "res://.import/percusion.wav-ca1f4168686ad6d2364d5bd3118b2759.sample" ]
+source_file="res://assets/percusion.wav"
+dest_files=[ "res://.import/percusion.wav-2f0bf38a9f2860b8a8a3cf03085ffcc9.sample" ]
 
 [params]
 

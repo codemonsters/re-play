@@ -122,8 +122,10 @@ func _process(delta):
 	if game_started:
 		for rect in rects:
 			rect.rect_position.y = rect.rect_position.y + speed * delta
-
-	print(str($Background/Barrita/Area2D.get_overlapping_bodies()))
+			if rect.rect_position.y > (bar_distance - piece_height) and rect.rect_position.y < (bar_distance + bar_height):
+				print("Nota tocando barra")
+	
+#	print(str($Background/Barrita/Area2D.get_overlapping_bodies()))
 
 func time_tick():
 	if current_countdown != 5:
@@ -193,3 +195,8 @@ func prepare_queues():
 				if _notes.size() > 0:
 					previous_note = _notes[0]
 	print(notes_queue)
+
+
+func _on_Area2D_body_entered(body):
+	print("Body ", body, " has entered")
+	
