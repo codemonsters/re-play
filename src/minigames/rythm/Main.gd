@@ -123,6 +123,8 @@ func _process(delta):
 		for rect in rects:
 			rect.rect_position.y = rect.rect_position.y + speed * delta
 
+	print(str($Background/Barrita/Area2D.get_overlapping_bodies()))
+
 func time_tick():
 	if current_countdown != 5:
 		count_down()
