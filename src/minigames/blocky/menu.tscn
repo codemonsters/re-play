@@ -1,24 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://minigames/blocky/assets/font_big.tres" type="DynamicFont" id=1]
 [ext_resource path="res://minigames/blocky/assets/font_small.tres" type="DynamicFont" id=2]
 [ext_resource path="res://minigames/blocky/menu.gd" type="Script" id=3]
+[ext_resource path="res://minigames/blocky/assets/background_menu.png" type="Texture" id=4]
 
 [node name="Menu" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 720.0
-margin_bottom = 576.0
-color = Color( 0.113725, 0.160784, 0.219608, 1 )
+margin_bottom = 577.0
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Title" type="Label" parent="."]
-margin_top = 100.0
+margin_top = 301.344
 margin_right = 720.0
-margin_bottom = 200.0
+margin_bottom = 401.344
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0.027451, 0.937255, 0.360784, 1 )
 text = "BLOCKY"
@@ -29,9 +30,9 @@ __meta__ = {
 }
 
 [node name="Start" type="Label" parent="."]
-margin_top = 200.217
+margin_top = 401.56
 margin_right = 720.0
-margin_bottom = 234.217
+margin_bottom = 435.56
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.027451, 0.937255, 0.360784, 1 )
 text = "- click or tap to start -"
