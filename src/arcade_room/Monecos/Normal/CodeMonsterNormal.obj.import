@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CodeMonsterNormal.obj-9d6d0d25894cfa4f36b595a4d49d5e10.mesh"
+
+[deps]
+
+files=[ "res://.import/CodeMonsterNormal.obj-9d6d0d25894cfa4f36b595a4d49d5e10.mesh" ]
+
+source_file="res://arcade_room/Monecos/Normal/CodeMonsterNormal.obj"
+dest_files=[ "res://.import/CodeMonsterNormal.obj-9d6d0d25894cfa4f36b595a4d49d5e10.mesh", "res://.import/CodeMonsterNormal.obj-9d6d0d25894cfa4f36b595a4d49d5e10.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://minigames/blocky/blocky.tscn" type="PackedScene" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="QuadMesh" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.32664 )
+
+[node name="ViewportQuad" type="MeshInstance" parent="."]
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 720, 576 )
+hdr = false
+usage = 0
+render_target_v_flip = true
+
+[node name="Blocky" parent="Viewport" instance=ExtResource( 1 )]

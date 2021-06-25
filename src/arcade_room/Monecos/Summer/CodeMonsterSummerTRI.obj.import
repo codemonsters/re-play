@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CodeMonsterSummerTRI.obj-3888aa20774261c5a0207188cb29c577.mesh"
+
+[deps]
+
+files=[ "res://.import/CodeMonsterSummerTRI.obj-3888aa20774261c5a0207188cb29c577.mesh" ]
+
+source_file="res://arcade_room/Monecos/Summer/CodeMonsterSummerTRI.obj"
+dest_files=[ "res://.import/CodeMonsterSummerTRI.obj-3888aa20774261c5a0207188cb29c577.mesh", "res://.import/CodeMonsterSummerTRI.obj-3888aa20774261c5a0207188cb29c577.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
