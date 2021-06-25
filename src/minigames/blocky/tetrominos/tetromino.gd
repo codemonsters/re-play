@@ -25,6 +25,7 @@ func _process(delta):
 		else:
 			available = false
 
+
 func _on_BoundingBox_mouse_entered():
 	mouse_inside = true
 
@@ -70,13 +71,19 @@ func get_bounding_box_corner_block():
 	var corner_block_pos = get_node("CollisionShape2D/BoundingBox").rect_position
 	print("posición local del bounding box = " + str(corner_block_pos))
 	print("posición global del bounding box = " + str(get_node("CollisionShape2D/BoundingBox").get_global_position()))
-	if rotation_index == 0:
-		corner_block_pos += Vector2(16, 16) #DEBUG: Parece que funciona
-	elif rotation_index == 1:
-		corner_block_pos = Vector2((get_node("CollisionShape2D/BoundingBox").rect_size.x / 2), -16)
-	elif rotation_index == 2:
-		print(Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16))
-		corner_block_pos -= Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16) #TODO: NO funciona, da datos erróneos :s
-	else:
-		corner_block_pos += Vector2(16, 16 - get_node("CollisionShape2D/BoundingBox").rect_size.x)
+
+	var block_vectors = []
+	for _i in self.get_node("Blocks").get_children():
+		block_vectors.append(_i.get_children()[0].get_global_position()) # TODO: A ver, esto es feo, poco práctico y puede cascar cuando menos te lo esperes. YOU HAVE BEEN WARNED
+	corner_block_pos = block_vectors.min() + Vector2(16, 16)
+
+	# if rotation_index == 0:
+	# 	corner_block_pos += Vector2(16, 16) #DEBUG: Parece que funciona
+	# elif rotation_index == 1:
+	# 	corner_block_pos = Vector2((get_node("CollisionShape2D/BoundingBox").rect_size.x / 2), -16)
+	# elif rotation_index == 2:
+	# 	print(Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16))
+	# 	corner_block_pos -= Vector2(get_node("CollisionShape2D/BoundingBox").rect_size.y - 16, 16) #TODO: NO funciona, da datos erróneos :s
+	# else:
+	# 	corner_block_pos += Vector2(16, 16 - get_node("CollisionShape2D/BoundingBox").rect_size.x)
 	return corner_block_pos

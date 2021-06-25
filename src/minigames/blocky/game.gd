@@ -21,10 +21,10 @@ func _ready():
 func create_empty_blocks():
 	# initialize stage matrix
 	var blockContainer = preload("res://minigames/blocky/block_container.tscn")
-	
+
 	var width = $Background/Stage.get_size().x
 	var height = $Background/Stage.get_size().y
-	
+
 	for row in range(ROWS):
 		matrix.append([])
 		for col in range(COLS):
@@ -41,10 +41,10 @@ func fetch_new_tetrominos():
 	var palette_pos = $Background/Palette.rect_position
 	var palette_rect_size = $Background/Palette.rect_size
 	assert(len(available_tetrominos) == 0, "Palette must be empty before fetching new tetrominos")
-	
+
 	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64 - palette_rect_size.y / 2), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 1 * (palette_rect_size.y / 4))))
 	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 3 * (palette_rect_size.y / 4))))
-	
+
 	$Background/TetrominosPreparing.add_child(available_tetrominos[0])
 	$Background/TetrominosPreparing.add_child(available_tetrominos[1])
 
