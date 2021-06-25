@@ -40,6 +40,8 @@ const vwidth = 1280
 # Array of rects currently on screen.
 const rects = []
 
+var touchingrects = []
+
 var speed
 
 const assets_dir = "res://assets/"
@@ -67,6 +69,9 @@ func new_rect(posx, posy=(-piece_height), sizex=piece_width, sizey=piece_height)
 	new_rect.rect_size.x = sizex
 	new_rect.rect_size.y = sizey
 	rects.append(new_rect)
+	var rect_name = rects[rects.size()-1].name
+	touchingrects.append([rect_name,0])
+#	print(touchingrects)
 
 
 func count_down():
@@ -123,7 +128,23 @@ func _process(delta):
 		for rect in rects:
 			rect.rect_position.y = rect.rect_position.y + speed * delta
 			if rect.rect_position.y > (bar_distance - piece_height) and rect.rect_position.y < (bar_distance + bar_height):
-				print("Nota tocando barra")
+				#print("---->" , rect.name, " tocando barra.")
+				var touching_index = touchingrects.find([rect.name,0])
+				touchingrects[touching_index][1] = 1
+			if rect.rect_position.y > (bar_distance + bar_height):
+				var touching_index = touchingrects.find([rect.name,1])
+				touchingrects[touching_index][1] = 0
+
+func check_touching():			
+	for rect in touchingrects:
+		var keypressed = 0
+		while rect[1] == 1:
+			pass
+
+
+
+
+
 	
 #	print(str($Background/Barrita/Area2D.get_overlapping_bodies()))
 
@@ -200,3 +221,12 @@ func prepare_queues():
 func _on_Area2D_body_entered(body):
 	print("Body ", body, " has entered")
 	
+func _input(ev):
+	if ev is InputEventKey and ev.scancode == KEY_V and not ev.echo:
+		print("Leftmost key pressed")
+	if ev is InputEventKey and ev.scancode == KEY_B and not ev.echo:
+		print("Left-center key pressed")
+	if ev is InputEventKey and ev.scancode == KEY_N and not ev.echo:
+		print("Right-center key pressed")
+	if ev is InputEventKey and ev.scancode == KEY_M and not ev.echo:
+		print("Rightmost key pressed")
