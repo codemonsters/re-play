@@ -68,8 +68,8 @@ func set_game(g):
 
 func get_bounding_box_corner_block():
 	var corner_block_pos = get_node("CollisionShape2D/BoundingBox").rect_position
-	print(str(corner_block_pos) + "------- rect_pos")
-
+	print("posición local del bounding box = " + str(corner_block_pos))
+	print("posición global del bounding box = " + str(get_node("CollisionShape2D/BoundingBox").get_global_position()))
 	if rotation_index == 0:
 		corner_block_pos += Vector2(16, 16) #DEBUG: Parece que funciona
 	elif rotation_index == 1:
