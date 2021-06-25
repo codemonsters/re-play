@@ -16,16 +16,15 @@ var line_color = Color(51.0 / 255.0, 255.0 / 255.0, 51.0 / 255.0)
 func _ready():
 	create_empty_blocks()
 	fetch_new_tetrominos()
-	print($Background/Stage.rect_position)
 
 
 func create_empty_blocks():
 	# initialize stage matrix
 	var blockContainer = preload("res://minigames/blocky/block_container.tscn")
-	
+
 	var width = $Background/Stage.get_size().x
 	var height = $Background/Stage.get_size().y
-	
+
 	for row in range(ROWS):
 		matrix.append([])
 		for col in range(COLS):
@@ -36,17 +35,16 @@ func create_empty_blocks():
 			bC.set_position(Vector2(x, y))
 			$Background/Stage.add_child(bC)
 			matrix[row].append(bC)
-			print("Insertando contenedor en: " + str(to_global(matrix[row][col].position)))
 
 
 func fetch_new_tetrominos():
 	var palette_pos = $Background/Palette.rect_position
 	var palette_rect_size = $Background/Palette.rect_size
 	assert(len(available_tetrominos) == 0, "Palette must be empty before fetching new tetrominos")
-	
+
 	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64 - palette_rect_size.y / 2), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 1 * (palette_rect_size.y / 4))))
 	available_tetrominos.append(new_tetromino(Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y - 64), Vector2(palette_pos.x + palette_rect_size.x / 2, palette_pos.y + 3 * (palette_rect_size.y / 4))))
-	
+
 	$Background/TetrominosPreparing.add_child(available_tetrominos[0])
 	$Background/TetrominosPreparing.add_child(available_tetrominos[1])
 
@@ -54,11 +52,11 @@ func fetch_new_tetrominos():
 func new_tetromino(initial_position, palette_position):
 	var random_tetromino = randi() % 5
 	var tetromino
-	
+
 	match random_tetromino:
 		0:
 			tetromino = tetromino_l.instance()
-		1: 
+		1:
 			tetromino = tetromino_line.instance()
 		2:
 			tetromino = tetromino_s.instance()
@@ -66,8 +64,10 @@ func new_tetromino(initial_position, palette_position):
 			tetromino = tetromino_square.instance()
 		4:
 			tetromino = tetromino_t.instance()
-	
-	tetromino.set_rotation_degrees((randi() % 4) * 90)
+
+	#tetromino.rotation_index = randi() % 4
+	tetromino.rotation_index = 1 #DEBUG: Dejar como estaba arriba ↑
+	tetromino.set_rotation_degrees((tetromino.rotation_index) * 90)
 	tetromino.set_position(initial_position)
 	tetromino.set_palette_position(palette_position)
 	tetromino.set_game(self)
@@ -75,8 +75,8 @@ func new_tetromino(initial_position, palette_position):
 
 
 func get_closest_block_container(tetromino):
-	var bounding_box_corner_center = tetromino.get_node("CollisionShape2D/BoundingBox").rect_position + Vector2(16, 16)
-	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + bounding_box_corner_center)	
+	var bounding_box_corner_center = tetromino.get_bounding_box_corner_block()
+	print("Centro del bloque que estaría en la esquina superior izquierda del rectángulo que contiene al Tetromino:" + str(bounding_box_corner_center) + "; rotation_indx → " + str(tetromino.rotation_index))
 	for row in range(ROWS):
 		for col in range(COLS):
 			if (matrix[row][col].get_corner_position() - bounding_box_corner_center) <= Vector2(16, 16):

@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/a-5.mp3-ef33e2d9f03f0497256e37a47d0df442.mp3str"
+path="res://.import/a-5.mp3-19052699b5e5c6e00cbe071d4e8730a0.mp3str"
 
 [deps]
 
-source_file="res://minigames/rythm/assets/mp3 Notes/a-5.mp3"
-dest_files=[ "res://.import/a-5.mp3-ef33e2d9f03f0497256e37a47d0df442.mp3str" ]
+source_file="res://assets/mp3 Notes/a-5.mp3"
+dest_files=[ "res://.import/a-5.mp3-19052699b5e5c6e00cbe071d4e8730a0.mp3str" ]
 
 [params]
 

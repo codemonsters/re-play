@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/kick.wav-c6e35955b26bba2b16aa2c773c12766c.sample"
+path="res://.import/kick.wav-bfbb3c4b9f2a4122a8f9ebc3bd8fdbcb.sample"
 
 [deps]
 
-source_file="res://minigames/rythm/assets/kick.wav"
-dest_files=[ "res://.import/kick.wav-c6e35955b26bba2b16aa2c773c12766c.sample" ]
+source_file="res://assets/kick.wav"
+dest_files=[ "res://.import/kick.wav-bfbb3c4b9f2a4122a8f9ebc3bd8fdbcb.sample" ]
 
 [params]
 
