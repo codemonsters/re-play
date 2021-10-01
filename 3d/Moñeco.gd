@@ -105,8 +105,8 @@ func process_movement(delta):
 	
 	
 	
-	if Input.is_action_pressed("ui_accept"):
-		print($RayCast.get_collider().name)
+#	if Input.is_action_pressed("ui_accept"):
+#		print($RayCast.get_collider().name)
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
